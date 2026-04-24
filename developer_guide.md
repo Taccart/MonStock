@@ -45,7 +45,6 @@ git clone https://github.com/Taccart/MonStock.git
 cd MonStock
 
 # Open in Android Studio, let Gradle sync automatically
-# Run on an emulator or physical device (API 26+)
 ```
 
 The project uses a **Gradle version catalog** (`gradle/libs.versions.toml`) for centralised dependency management. All library versions are declared there.
@@ -61,17 +60,41 @@ The project uses a **Gradle version catalog** (`gradle/libs.versions.toml`) for 
 | Architecture | MVVM + Clean Architecture |
 | DI | Hilt 2.53.1 |
 | Database | Room 2.7.0 |
-| Networking | Retrofit 2.11.0 + OkHttp 4.12.0 |
-| Navigation | Navigation Compose 2.8.5 |
-| Async | Kotlin Coroutines 1.9.0 + Flow |
 | Image loading | Coil 2.7.0 |
 | Preferences | DataStore 1.1.2 |
 | Camera | CameraX 1.4.1 |
-| Barcode scanning | ML Kit Barcode Scanning 17.3.0 |
 | QR generation | ZXing Core 3.5.3 |
 | Background work | WorkManager 2.10.0 |
 
 ---
+
+
+## Deploying Over USB
+
+To deploy MonStock to a physical Android device over USB:
+
+1. Enable Developer Options and USB Debugging on your Android device:
+    - Go to Settings > About phone > tap 'Build number' 7 times to unlock Developer Options.
+    - In Developer Options, enable 'USB debugging'.
+2. Connect your device to your computer via USB.
+3. Authorize the computer on your device if prompted.
+4. Verify your device is detected:
+
+    ```bash
+    adb devices
+    ```
+
+    Your device should appear in the list.
+5. From the project root, run:
+
+    ```bash
+    ./gradlew installDebug
+    ```
+
+    This will build and install the app on your connected device.
+6. The app should launch automatically. If not, open it from the app drawer.
+
+You can also deploy over USB using Android Studio by selecting your device in the device dropdown and clicking 'Run'.
 
 ## Project Structure
 
