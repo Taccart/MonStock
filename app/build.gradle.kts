@@ -119,6 +119,11 @@ dependencies {
     // ZXing Core (QR code generation)
     implementation(libs.zxing.core)
 
+    // WorkManager + Hilt integration
+    implementation(libs.workmanager.ktx)
+    implementation(libs.hilt.workmanager)
+    ksp(libs.hilt.workmanager.compiler)
+
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

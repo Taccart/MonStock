@@ -6,20 +6,28 @@ import android.view.View;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
+import com.monstock.app.data.local.dao.BarcodeCacheDao;
 import com.monstock.app.data.local.dao.ItemDao;
 import com.monstock.app.data.local.dao.PantryDao;
 import com.monstock.app.data.local.dao.ShelfDao;
 import com.monstock.app.data.local.database.MonStockDatabase;
+import com.monstock.app.data.remote.api.OpenFoodFactsApiService;
+import com.monstock.app.data.repository.BarcodeRepository;
 import com.monstock.app.data.repository.ItemRepository;
 import com.monstock.app.data.repository.PantryRepository;
 import com.monstock.app.data.repository.ShelfRepository;
+import com.monstock.app.data.repository.impl.BarcodeRepositoryImpl;
 import com.monstock.app.data.repository.impl.ItemRepositoryImpl;
 import com.monstock.app.data.repository.impl.PantryRepositoryImpl;
 import com.monstock.app.data.repository.impl.ShelfRepositoryImpl;
+import com.monstock.app.di.DatabaseModule_ProvideBarcodeCacheDaoFactory;
 import com.monstock.app.di.DatabaseModule_ProvideDatabaseFactory;
 import com.monstock.app.di.DatabaseModule_ProvideItemDaoFactory;
 import com.monstock.app.di.DatabaseModule_ProvidePantryDaoFactory;
 import com.monstock.app.di.DatabaseModule_ProvideShelfDaoFactory;
+import com.monstock.app.di.NetworkModule_ProvideOkHttpClientFactory;
+import com.monstock.app.di.NetworkModule_ProvideOpenFoodFactsApiServiceFactory;
+import com.monstock.app.di.NetworkModule_ProvideOpenFoodFactsRetrofitFactory;
 import com.monstock.app.ui.MainActivity;
 import com.monstock.app.ui.screens.addedit.AddEditItemViewModel;
 import com.monstock.app.ui.screens.addedit.AddEditItemViewModel_HiltModules;
@@ -41,6 +49,22 @@ import com.monstock.app.ui.screens.pantry.PantryListViewModel;
 import com.monstock.app.ui.screens.pantry.PantryListViewModel_HiltModules;
 import com.monstock.app.ui.screens.pantry.PantryListViewModel_HiltModules_BindsModule_Binds_LazyMapKey;
 import com.monstock.app.ui.screens.pantry.PantryListViewModel_HiltModules_KeyModule_Provide_LazyMapKey;
+import com.monstock.app.ui.screens.scanner.BarcodeConfirmViewModel;
+import com.monstock.app.ui.screens.scanner.BarcodeConfirmViewModel_HiltModules;
+import com.monstock.app.ui.screens.scanner.BarcodeConfirmViewModel_HiltModules_BindsModule_Binds_LazyMapKey;
+import com.monstock.app.ui.screens.scanner.BarcodeConfirmViewModel_HiltModules_KeyModule_Provide_LazyMapKey;
+import com.monstock.app.ui.screens.scanner.BarcodeScannerViewModel;
+import com.monstock.app.ui.screens.scanner.BarcodeScannerViewModel_HiltModules;
+import com.monstock.app.ui.screens.scanner.BarcodeScannerViewModel_HiltModules_BindsModule_Binds_LazyMapKey;
+import com.monstock.app.ui.screens.scanner.BarcodeScannerViewModel_HiltModules_KeyModule_Provide_LazyMapKey;
+import com.monstock.app.ui.screens.scanner.QrLabelViewModel;
+import com.monstock.app.ui.screens.scanner.QrLabelViewModel_HiltModules;
+import com.monstock.app.ui.screens.scanner.QrLabelViewModel_HiltModules_BindsModule_Binds_LazyMapKey;
+import com.monstock.app.ui.screens.scanner.QrLabelViewModel_HiltModules_KeyModule_Provide_LazyMapKey;
+import com.monstock.app.ui.screens.scanner.RestockScanViewModel;
+import com.monstock.app.ui.screens.scanner.RestockScanViewModel_HiltModules;
+import com.monstock.app.ui.screens.scanner.RestockScanViewModel_HiltModules_BindsModule_Binds_LazyMapKey;
+import com.monstock.app.ui.screens.scanner.RestockScanViewModel_HiltModules_KeyModule_Provide_LazyMapKey;
 import com.monstock.app.ui.screens.shelf.ShelfViewModel;
 import com.monstock.app.ui.screens.shelf.ShelfViewModel_HiltModules;
 import com.monstock.app.ui.screens.shelf.ShelfViewModel_HiltModules_BindsModule_Binds_LazyMapKey;
@@ -70,6 +94,8 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
 import javax.annotation.processing.Generated;
+import okhttp3.OkHttpClient;
+import retrofit2.Retrofit;
 
 @DaggerGenerated
 @Generated(
@@ -405,7 +431,7 @@ public final class DaggerMonStockApplication_HiltComponents_SingletonC {
 
     @Override
     public Map<Class<?>, Boolean> getViewModelKeys() {
-      return LazyClassKeyMap.<Boolean>of(MapBuilder.<String, Boolean>newMapBuilder(6).put(AddEditItemViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, AddEditItemViewModel_HiltModules.KeyModule.provide()).put(HomeViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, HomeViewModel_HiltModules.KeyModule.provide()).put(ItemDetailViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, ItemDetailViewModel_HiltModules.KeyModule.provide()).put(ItemListViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, ItemListViewModel_HiltModules.KeyModule.provide()).put(PantryListViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, PantryListViewModel_HiltModules.KeyModule.provide()).put(ShelfViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, ShelfViewModel_HiltModules.KeyModule.provide()).build());
+      return LazyClassKeyMap.<Boolean>of(MapBuilder.<String, Boolean>newMapBuilder(10).put(AddEditItemViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, AddEditItemViewModel_HiltModules.KeyModule.provide()).put(BarcodeConfirmViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, BarcodeConfirmViewModel_HiltModules.KeyModule.provide()).put(BarcodeScannerViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, BarcodeScannerViewModel_HiltModules.KeyModule.provide()).put(HomeViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, HomeViewModel_HiltModules.KeyModule.provide()).put(ItemDetailViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, ItemDetailViewModel_HiltModules.KeyModule.provide()).put(ItemListViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, ItemListViewModel_HiltModules.KeyModule.provide()).put(PantryListViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, PantryListViewModel_HiltModules.KeyModule.provide()).put(QrLabelViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, QrLabelViewModel_HiltModules.KeyModule.provide()).put(RestockScanViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, RestockScanViewModel_HiltModules.KeyModule.provide()).put(ShelfViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, ShelfViewModel_HiltModules.KeyModule.provide()).build());
     }
 
     @Override
@@ -433,6 +459,10 @@ public final class DaggerMonStockApplication_HiltComponents_SingletonC {
 
     private Provider<AddEditItemViewModel> addEditItemViewModelProvider;
 
+    private Provider<BarcodeConfirmViewModel> barcodeConfirmViewModelProvider;
+
+    private Provider<BarcodeScannerViewModel> barcodeScannerViewModelProvider;
+
     private Provider<HomeViewModel> homeViewModelProvider;
 
     private Provider<ItemDetailViewModel> itemDetailViewModelProvider;
@@ -440,6 +470,10 @@ public final class DaggerMonStockApplication_HiltComponents_SingletonC {
     private Provider<ItemListViewModel> itemListViewModelProvider;
 
     private Provider<PantryListViewModel> pantryListViewModelProvider;
+
+    private Provider<QrLabelViewModel> qrLabelViewModelProvider;
+
+    private Provider<RestockScanViewModel> restockScanViewModelProvider;
 
     private Provider<ShelfViewModel> shelfViewModelProvider;
 
@@ -457,16 +491,20 @@ public final class DaggerMonStockApplication_HiltComponents_SingletonC {
     private void initialize(final SavedStateHandle savedStateHandleParam,
         final ViewModelLifecycle viewModelLifecycleParam) {
       this.addEditItemViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
-      this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
-      this.itemDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
-      this.itemListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
-      this.pantryListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
-      this.shelfViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
+      this.barcodeConfirmViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
+      this.barcodeScannerViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
+      this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
+      this.itemDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
+      this.itemListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
+      this.pantryListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 6);
+      this.qrLabelViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 7);
+      this.restockScanViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 8);
+      this.shelfViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 9);
     }
 
     @Override
     public Map<Class<?>, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(6).put(AddEditItemViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) addEditItemViewModelProvider)).put(HomeViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) homeViewModelProvider)).put(ItemDetailViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) itemDetailViewModelProvider)).put(ItemListViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) itemListViewModelProvider)).put(PantryListViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) pantryListViewModelProvider)).put(ShelfViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) shelfViewModelProvider)).build());
+      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(10).put(AddEditItemViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) addEditItemViewModelProvider)).put(BarcodeConfirmViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) barcodeConfirmViewModelProvider)).put(BarcodeScannerViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) barcodeScannerViewModelProvider)).put(HomeViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) homeViewModelProvider)).put(ItemDetailViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) itemDetailViewModelProvider)).put(ItemListViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) itemListViewModelProvider)).put(PantryListViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) pantryListViewModelProvider)).put(QrLabelViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) qrLabelViewModelProvider)).put(RestockScanViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) restockScanViewModelProvider)).put(ShelfViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) shelfViewModelProvider)).build());
     }
 
     @Override
@@ -498,19 +536,31 @@ public final class DaggerMonStockApplication_HiltComponents_SingletonC {
           case 0: // com.monstock.app.ui.screens.addedit.AddEditItemViewModel 
           return (T) new AddEditItemViewModel(singletonCImpl.bindItemRepositoryProvider.get(), singletonCImpl.bindShelfRepositoryProvider.get(), singletonCImpl.bindPantryRepositoryProvider.get());
 
-          case 1: // com.monstock.app.ui.screens.home.HomeViewModel 
+          case 1: // com.monstock.app.ui.screens.scanner.BarcodeConfirmViewModel 
+          return (T) new BarcodeConfirmViewModel(singletonCImpl.bindBarcodeRepositoryProvider.get());
+
+          case 2: // com.monstock.app.ui.screens.scanner.BarcodeScannerViewModel 
+          return (T) new BarcodeScannerViewModel(singletonCImpl.bindBarcodeRepositoryProvider.get());
+
+          case 3: // com.monstock.app.ui.screens.home.HomeViewModel 
           return (T) new HomeViewModel(singletonCImpl.bindItemRepositoryProvider.get(), singletonCImpl.bindPantryRepositoryProvider.get());
 
-          case 2: // com.monstock.app.ui.screens.itemdetail.ItemDetailViewModel 
+          case 4: // com.monstock.app.ui.screens.itemdetail.ItemDetailViewModel 
           return (T) new ItemDetailViewModel(singletonCImpl.bindItemRepositoryProvider.get(), singletonCImpl.bindShelfRepositoryProvider.get());
 
-          case 3: // com.monstock.app.ui.screens.itemlist.ItemListViewModel 
+          case 5: // com.monstock.app.ui.screens.itemlist.ItemListViewModel 
           return (T) new ItemListViewModel(singletonCImpl.bindItemRepositoryProvider.get(), singletonCImpl.bindShelfRepositoryProvider.get());
 
-          case 4: // com.monstock.app.ui.screens.pantry.PantryListViewModel 
+          case 6: // com.monstock.app.ui.screens.pantry.PantryListViewModel 
           return (T) new PantryListViewModel(singletonCImpl.bindPantryRepositoryProvider.get());
 
-          case 5: // com.monstock.app.ui.screens.shelf.ShelfViewModel 
+          case 7: // com.monstock.app.ui.screens.scanner.QrLabelViewModel 
+          return (T) new QrLabelViewModel(singletonCImpl.bindItemRepositoryProvider.get());
+
+          case 8: // com.monstock.app.ui.screens.scanner.RestockScanViewModel 
+          return (T) new RestockScanViewModel(singletonCImpl.bindItemRepositoryProvider.get(), singletonCImpl.bindShelfRepositoryProvider.get(), singletonCImpl.bindBarcodeRepositoryProvider.get());
+
+          case 9: // com.monstock.app.ui.screens.shelf.ShelfViewModel 
           return (T) new ShelfViewModel(singletonCImpl.bindShelfRepositoryProvider.get(), singletonCImpl.bindPantryRepositoryProvider.get());
 
           default: throw new AssertionError(id);
@@ -613,6 +663,18 @@ public final class DaggerMonStockApplication_HiltComponents_SingletonC {
 
     private Provider<PantryRepository> bindPantryRepositoryProvider;
 
+    private Provider<BarcodeCacheDao> provideBarcodeCacheDaoProvider;
+
+    private Provider<OkHttpClient> provideOkHttpClientProvider;
+
+    private Provider<Retrofit> provideOpenFoodFactsRetrofitProvider;
+
+    private Provider<OpenFoodFactsApiService> provideOpenFoodFactsApiServiceProvider;
+
+    private Provider<BarcodeRepositoryImpl> barcodeRepositoryImplProvider;
+
+    private Provider<BarcodeRepository> bindBarcodeRepositoryProvider;
+
     private SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
       this.applicationContextModule = applicationContextModuleParam;
       initialize(applicationContextModuleParam);
@@ -631,6 +693,12 @@ public final class DaggerMonStockApplication_HiltComponents_SingletonC {
       this.providePantryDaoProvider = DoubleCheck.provider(new SwitchingProvider<PantryDao>(singletonCImpl, 6));
       this.pantryRepositoryImplProvider = new SwitchingProvider<>(singletonCImpl, 5);
       this.bindPantryRepositoryProvider = DoubleCheck.provider((Provider) pantryRepositoryImplProvider);
+      this.provideBarcodeCacheDaoProvider = DoubleCheck.provider(new SwitchingProvider<BarcodeCacheDao>(singletonCImpl, 8));
+      this.provideOkHttpClientProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 11));
+      this.provideOpenFoodFactsRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 10));
+      this.provideOpenFoodFactsApiServiceProvider = DoubleCheck.provider(new SwitchingProvider<OpenFoodFactsApiService>(singletonCImpl, 9));
+      this.barcodeRepositoryImplProvider = new SwitchingProvider<>(singletonCImpl, 7);
+      this.bindBarcodeRepositoryProvider = DoubleCheck.provider((Provider) barcodeRepositoryImplProvider);
     }
 
     @Override
@@ -686,6 +754,21 @@ public final class DaggerMonStockApplication_HiltComponents_SingletonC {
 
           case 6: // com.monstock.app.data.local.dao.PantryDao 
           return (T) DatabaseModule_ProvidePantryDaoFactory.providePantryDao(singletonCImpl.provideDatabaseProvider.get());
+
+          case 7: // com.monstock.app.data.repository.impl.BarcodeRepositoryImpl 
+          return (T) new BarcodeRepositoryImpl(singletonCImpl.provideBarcodeCacheDaoProvider.get(), singletonCImpl.provideOpenFoodFactsApiServiceProvider.get());
+
+          case 8: // com.monstock.app.data.local.dao.BarcodeCacheDao 
+          return (T) DatabaseModule_ProvideBarcodeCacheDaoFactory.provideBarcodeCacheDao(singletonCImpl.provideDatabaseProvider.get());
+
+          case 9: // com.monstock.app.data.remote.api.OpenFoodFactsApiService 
+          return (T) NetworkModule_ProvideOpenFoodFactsApiServiceFactory.provideOpenFoodFactsApiService(singletonCImpl.provideOpenFoodFactsRetrofitProvider.get());
+
+          case 10: // @javax.inject.Named("openFoodFacts") retrofit2.Retrofit 
+          return (T) NetworkModule_ProvideOpenFoodFactsRetrofitFactory.provideOpenFoodFactsRetrofit(singletonCImpl.provideOkHttpClientProvider.get());
+
+          case 11: // okhttp3.OkHttpClient 
+          return (T) NetworkModule_ProvideOkHttpClientFactory.provideOkHttpClient();
 
           default: throw new AssertionError(id);
         }

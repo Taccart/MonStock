@@ -86,4 +86,74 @@
     <string name="status_expired">Expiré</string>
     <string name="status_expiring_soon">Expire bientôt</string>
     <string name="status_low_stock">Stock faible</string>
+
+    <!-- Actions (extra) -->
+    <string name="action_share">Partager</string>
+
+    <!-- Phase 5 — Barcode Scanner -->
+    <string name="scanner_title">Scanner un code-barres</string>
+    <string name="scanner_restock_title">Scanner pour réapprovisionner</string>
+    <string name="scanner_flashlight">Lampe de poche</string>
+    <string name="scanner_batch_mode">Mode lot</string>
+    <string name="scanner_batch_active">Mode lot — %1$d scanné(s)</string>
+    <string name="scanner_batch_finish">Terminer le lot</string>
+    <string name="scanner_manual_entry">Saisie manuelle</string>
+    <string name="scanner_manual_barcode_hint">Code-barres</string>
+    <string name="scanner_permission_rationale">L\'autorisation d\'utiliser la caméra est nécessaire pour scanner les codes-barres.</string>
+    <string name="scanner_grant_permission">Autoriser la caméra</string>
+    <string name="scanner_confirm_title">Confirmer le produit</string>
+    <string name="scanner_confirm_use">Utiliser ce produit</string>
+    <string name="scanner_product_not_found">Produit introuvable pour le code %1$s.\nSaisissez les informations manuellement.</string>
+
+    <!-- Phase 5 — Restock -->
+    <string name="restock_title">Réapprovisionnement</string>
+    <string name="restock_current_qty">Quantité actuelle : %1$s %2$s</string>
+    <string name="restock_qty_delta">Quantité à ajouter</string>
+    <string name="restock_new_expiry">Nouvelle date d\'expiration (optionnel)</string>
+    <string name="restock_action_save">Réapprovisionner</string>
+
+    <!-- Phase 5 — QR Label -->
+    <string name="qr_label_title">Étiquette QR</string>
+    <string name="qr_label_content_description">Code QR de l\'article</string>
+    <string name="qr_label_hint">Partagez ou imprimez cette étiquette pour identifier l\'article.</string>
+    <string name="qr_label_export_pdf">Exporter en PDF</string>
+
+    <!-- Batch result -->
+    <string name="batch_result_title">Résultats du lot</string>
+    <string name="batch_result_subtitle">%1$d article(s) scanné(s). Ajoutez-les à votre stock.</string>
+    <string name="batch_result_empty">Aucun article scanné.</string>
+    <string name="batch_result_not_found">Produit introuvable</string>
+    <string name="batch_result_done">Terminer et retourner au scanner</string>
+
+    <!-- Phase 3 — Notification channels -->
+    <string name="notif_channel_expiry_name">Alertes de péremption</string>
+    <string name="notif_channel_expiry_desc">Notifications pour les articles qui arrivent à expiration</string>
+    <string name="notif_channel_low_stock_name">Alertes de stock bas</string>
+    <string name="notif_channel_low_stock_desc">Notifications pour les articles en dessous du seuil minimum</string>
+    <string name="notif_channel_digest_name">Résumé quotidien</string>
+    <string name="notif_channel_digest_desc">Résumé journalier du stock et des expirations</string>
+
+    <!-- Phase 3 — Notification content -->
+    <string name="notif_expiry_title_expired">%1$d article(s) périmé(s) !</string>
+    <string name="notif_expiry_title_soon">%1$d article(s) expirent bientôt</string>
+    <string name="notif_low_stock_title">%1$d article(s) en stock bas</string>
+    <string name="notif_digest_title">Résumé MonStock</string>
+    <string name="notif_digest_expiring">%1$d expirant(s)</string>
+    <string name="notif_digest_low_stock">%1$d stock(s) bas</string>
+
+    <!-- Phase 4 — Statistics & Insights -->
+    <string name="nav_statistics">Statistiques</string>
+    <string name="stats_title">Statistiques</string>
+    <string name="stats_overview">Vue d\'ensemble</string>
+    <string name="stats_consumed_total">Consommés</string>
+    <string name="stats_wasted_total">Gaspillés</string>
+    <string name="stats_monthly_spend">Dépenses ce mois (€)</string>
+    <string name="stats_most_consumed">Articles les plus consommés</string>
+    <string name="stats_no_data">Aucune donnée disponible.\nEnregistrez des consommations depuis la fiche article.</string>
+    <string name="stats_action_consumed">Consommé</string>
+    <string name="stats_action_wasted">Gaspillé</string>
+    <string name="stats_log_consumed_title">Enregistrer une consommation</string>
+    <string name="stats_log_wasted_title">Enregistrer un gaspillage</string>
+    <string name="stats_log_qty_label">Quantité consommée / gaspillée</string>
+    <string name="field_purchase_price">Prix d\'achat (€/unité, optionnel)</string>
 </resources>

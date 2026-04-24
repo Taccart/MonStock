@@ -5,6 +5,86 @@ It is used as input to generate code via an AI agent.
 
 ---
 
+## ✅ Implementation Status *(updated 2026-04-24)*
+
+### Phase 1 — Data Model
+| Feature | Status |
+|---|---|
+| `Pantry` entity & DAO | ✅ Done |
+| `Shelf` entity & DAO | ✅ Done |
+| `Item` entity & DAO | ✅ Done |
+| `ItemCategory` / `ItemUnit` enums | ✅ Done |
+| `BarcodeCacheEntity` & DAO | ✅ Done |
+| Room database (`MonStockDatabase`) + type converters | ✅ Done |
+| Domain models (`Pantry`, `Shelf`, `Item`) | ✅ Done |
+| Repositories + Hilt DI modules | ✅ Done |
+
+### Phase 2 — Screens & UX
+| Feature | Status |
+|---|---|
+| Home / Dashboard screen + ViewModel | ✅ Done |
+| Pantry List screen + ViewModel | ✅ Done |
+| Shelf screen + ViewModel | ✅ Done |
+| Item List screen (sort, search, filter chips) + ViewModel | ✅ Done |
+| Item Detail screen + ViewModel | ✅ Done |
+| Add / Edit Item screen + ViewModel | ✅ Done |
+| Shopping List screen | ❌ Not started |
+| Shared UI components (`ItemCard`, `SummaryCard`, `EmptyState`, `ConfirmDeleteDialog`) | ✅ Done |
+| Navigation graph (`NavHost`) | ✅ Done |
+| Dark mode / theming | ✅ Done |
+
+### Phase 3 — Notifications & Alerts
+| Feature | Status |
+|---|---|
+| Expiry alert (WorkManager) | ✅ Done |
+| Low-stock alert | ✅ Done |
+| Daily digest notification | ✅ Done |
+
+### Phase 4 — Statistics & Insights
+| Feature | Status |
+|---|---|
+| Waste tracking | ✅ Done |
+| Consumption history | ✅ Done |
+| Charts (most consumed, cost) | ✅ Done |
+
+### Phase 5 — Barcode Scanner
+| Feature | Status |
+|---|---|
+| Camera barcode scanner screen + ViewModel | ✅ Done |
+| Open Food Facts API service + DTO | ✅ Done |
+| Barcode repository (offline cache + remote lookup) | ✅ Done |
+| Barcode confirmation screen + ViewModel | ✅ Done |
+| QR label generation screen | ✅ Done |
+| Restock-via-scan screen + ViewModel | ✅ Done |
+| Network DI module (Retrofit) | ✅ Done |
+| Batch scan mode | ✅ Done |
+| Flashlight toggle | ✅ Done |
+| Custom label print / share (PDF/PNG) | ✅ Done |
+
+### Phase 6 — Inventory
+| Feature | Status |
+|---|---|
+| Inventory session (start / stop per pantry or shelf) | ✅ Done |
+| Item-by-item counting (confirm or correct quantity + expiry) | ✅ Done |
+| Scan-assisted counting (barcode scan to locate items) | ✅ Done |
+| Discrepancy report (counted vs. recorded) | ✅ Done |
+| Bulk update (apply all corrections at end of session) | ✅ Done |
+| Inventory history log | ✅ Done |
+| Shelf-level progress tracking during session | ✅ Done |
+| Auto-detect missing items (not scanned during full inventory) | ✅ Done |
+| Export inventory report (PDF / CSV) | ✅ Done |
+
+### Non-Functional Requirements
+| Feature | Status |
+|---|---|
+| Offline-first architecture | ✅ Done |
+| TalkBack / accessibility | ❌ Not started |
+| Data export / import (JSON) | ❌ Not started |
+| Home screen widget | ❌ Not started |
+| Localization (FR/EN) | ❌ Not started |
+
+---
+
 ## 🎯 Overview
 
 MonStock is an offline-first Android app that helps users track the contents of their pantry (and other storage locations such as fridge, cellar, garage). Users can add, edit, and remove items, get alerted before items expire, and generate shopping lists based on low or expired stock.
@@ -151,6 +231,52 @@ Deep integration of barcode/QR code scanning to speed up item entry and stock ma
 - Default quantity increment on restock scan (configurable)
 - Enable/disable product database lookup
 - Preferred barcode format filter
+
+---
+
+## 📦 Phase 6 — Inventory
+
+### Overview
+Structured stock-taking feature that lets users physically count and reconcile their actual pantry contents against what is recorded in the app.
+
+### Inventory Session
+- Start a time-stamped inventory session scoped to a **pantry** or a specific **shelf**
+- Session states: `IN_PROGRESS`, `COMPLETED`, `CANCELLED`
+- Only one active session allowed at a time per pantry
+- Session stores: start time, end time, scope (pantry/shelf), operator notes
+
+### Item-by-Item Counting
+- Go through each item in the selected scope one by one
+- For each item: confirm quantity as-is, or enter the actual counted quantity and/or correct the expiry date
+- Visual progress indicator (e.g., "12 / 34 items checked")
+
+### Scan-Assisted Counting
+- Use the barcode scanner to quickly locate an item in the current session
+- Scanning a barcode marks the matching item as counted and opens the quantity confirmation dialog
+- Integrates with the offline barcode cache from Phase 5
+
+### Discrepancy Report
+- At the end of a session, display a summary of all items where the counted quantity differs from the recorded quantity
+- Highlight: quantity differences, expiry date corrections, items not scanned (possibly missing)
+
+### Bulk Update
+- After reviewing the discrepancy report, apply all corrections to the database in a single transaction
+- Individual corrections can be deselected before applying
+
+### Inventory History
+- List of all completed inventory sessions with: date, scope, number of items checked, number of corrections made
+- Tap a past session to view its discrepancy report (read-only)
+
+### Shelf-Level Progress
+- During a session scoped to a full pantry, show per-shelf completion status (e.g., ✅ Étagère haute, 🔄 Tiroir légumes)
+
+### Auto-Detect Missing Items
+- At the end of a scan-assisted session, items that were never scanned are flagged as **possibly missing**
+- User can confirm removal or keep them in stock
+
+### Export Inventory Report
+- Export a completed session as **PDF** or **CSV**
+- Report includes: item name, shelf, recorded quantity, counted quantity, delta, expiry dates
 
 ---
 

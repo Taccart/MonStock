@@ -1,0 +1,2 @@
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.scanner.QrLabelViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.scanner.QrLabelViewModel

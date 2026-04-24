@@ -30,6 +30,7 @@ data class AddEditItemUiState(
     val purchaseDate: LocalDate? = null,
     val expiryDate: LocalDate? = null,
     val minimumStockThreshold: String = "",
+    val purchasePrice: String = "",
     val barcode: String = "",
     val notes: String = "",
     // Shelf selection
@@ -57,7 +58,16 @@ class AddEditItemViewModel @Inject constructor(
     val allPantries: StateFlow<List<Pantry>> = pantryRepository.getAllPantries()
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
 
-    fun init(itemId: Long?, shelfId: Long?) {
+    fun init(
+        itemId: Long?,
+        shelfId: Long?,
+        prefillBarcode: String? = null,
+        prefillName: String? = null,
+        prefillBrand: String? = null,
+        prefillCategory: String? = null,
+        prefillUnit: String? = null,
+        @Suppress("UNUSED_PARAMETER") prefillImageUrl: String? = null
+    ) {
         viewModelScope.launch {
             // Load pantries for shelf picker
             pantryRepository.getAllPantries().collect { pantries ->
@@ -80,6 +90,7 @@ class AddEditItemViewModel @Inject constructor(
                         purchaseDate = item.purchaseDate,
                         expiryDate = item.expiryDate,
                         minimumStockThreshold = item.minimumStockThreshold?.toString() ?: "",
+                        purchasePrice = item.purchasePricePerUnit?.toString() ?: "",
                         barcode = item.barcode ?: "",
                         notes = item.notes ?: "",
                         selectedShelfId = item.shelfId,
@@ -88,11 +99,27 @@ class AddEditItemViewModel @Inject constructor(
                 }
                 shelf?.pantryId?.let { loadShelvesForPantry(it) }
             }
-        } else if (shelfId != null) {
-            viewModelScope.launch {
-                val shelf = shelfRepository.getShelfById(shelfId)
-                _uiState.update { it.copy(selectedShelfId = shelfId, selectedPantryId = shelf?.pantryId) }
-                shelf?.pantryId?.let { loadShelvesForPantry(it) }
+        } else {
+            // Apply any prefill values (from barcode scan)
+            _uiState.update { state ->
+                state.copy(
+                    barcode = prefillBarcode ?: state.barcode,
+                    name = prefillName ?: state.name,
+                    brand = prefillBrand ?: state.brand,
+                    category = prefillCategory
+                        ?.let { runCatching { ItemCategory.valueOf(it) }.getOrNull() }
+                        ?: state.category,
+                    unit = prefillUnit
+                        ?.let { runCatching { ItemUnit.valueOf(it) }.getOrNull() }
+                        ?: state.unit
+                )
+            }
+            if (shelfId != null) {
+                viewModelScope.launch {
+                    val shelf = shelfRepository.getShelfById(shelfId)
+                    _uiState.update { it.copy(selectedShelfId = shelfId, selectedPantryId = shelf?.pantryId) }
+                    shelf?.pantryId?.let { loadShelvesForPantry(it) }
+                }
             }
         }
     }
@@ -114,6 +141,7 @@ class AddEditItemViewModel @Inject constructor(
     fun onPurchaseDateChange(v: LocalDate?) = _uiState.update { it.copy(purchaseDate = v) }
     fun onExpiryDateChange(v: LocalDate?) = _uiState.update { it.copy(expiryDate = v) }
     fun onMinThresholdChange(v: String) = _uiState.update { it.copy(minimumStockThreshold = v) }
+    fun onPurchasePriceChange(v: String) = _uiState.update { it.copy(purchasePrice = v) }
     fun onBarcodeChange(v: String) = _uiState.update { it.copy(barcode = v) }
     fun onNotesChange(v: String) = _uiState.update { it.copy(notes = v) }
     fun onShelfSelected(shelfId: Long) = _uiState.update { it.copy(selectedShelfId = shelfId, shelfError = false) }
@@ -144,7 +172,8 @@ class AddEditItemViewModel @Inject constructor(
             expiryDate = state.expiryDate,
             minimumStockThreshold = state.minimumStockThreshold.toDoubleOrNull(),
             barcode = state.barcode.trim().ifBlank { null },
-            notes = state.notes.trim().ifBlank { null }
+            notes = state.notes.trim().ifBlank { null },
+            purchasePricePerUnit = state.purchasePrice.toDoubleOrNull()
         )
 
         viewModelScope.launch {

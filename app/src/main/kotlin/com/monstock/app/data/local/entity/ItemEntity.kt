@@ -34,5 +34,6 @@ data class ItemEntity(
     val minimumStockThreshold: Double? = null,
     val barcode: String? = null,
     val photoUri: String? = null,
-    val notes: String? = null
+    val notes: String? = null,
+    val purchasePricePerUnit: Double? = null
 )

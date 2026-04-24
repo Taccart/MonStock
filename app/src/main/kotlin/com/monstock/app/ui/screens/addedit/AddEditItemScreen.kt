@@ -14,6 +14,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.CalendarMonth
+import androidx.compose.material.icons.filled.QrCodeScanner
 import androidx.compose.material3.Button
 import androidx.compose.material3.DatePicker
 import androidx.compose.material3.DatePickerDialog
@@ -61,10 +62,22 @@ private val dateFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM
 fun AddEditItemScreen(
     itemId: Long?,
     shelfId: Long?,
+    prefillBarcode: String? = null,
+    prefillName: String? = null,
+    prefillBrand: String? = null,
+    prefillCategory: String? = null,
+    prefillUnit: String? = null,
+    prefillImageUrl: String? = null,
     navController: NavController,
     viewModel: AddEditItemViewModel = hiltViewModel()
 ) {
-    LaunchedEffect(itemId, shelfId) { viewModel.init(itemId, shelfId) }
+    LaunchedEffect(itemId, shelfId) {
+        viewModel.init(
+            itemId, shelfId,
+            prefillBarcode, prefillName, prefillBrand,
+            prefillCategory, prefillUnit, prefillImageUrl
+        )
+    }
 
     val state by viewModel.uiState.collectAsStateWithLifecycle()
 
@@ -177,6 +190,16 @@ fun AddEditItemScreen(
                 modifier = Modifier.fillMaxWidth()
             )
 
+            // --- Purchase price per unit ---
+            OutlinedTextField(
+                value = state.purchasePrice,
+                onValueChange = viewModel::onPurchasePriceChange,
+                label = { Text(stringResource(R.string.field_purchase_price)) },
+                singleLine = true,
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                modifier = Modifier.fillMaxWidth()
+            )
+
             // --- Shelf picker ---
             if (state.pantries.isNotEmpty()) {
                 Text(stringResource(R.string.field_shelf), style = MaterialTheme.typography.labelLarge)
@@ -210,13 +233,34 @@ fun AddEditItemScreen(
             }
 
             // --- Barcode ---
-            OutlinedTextField(
-                value = state.barcode,
-                onValueChange = viewModel::onBarcodeChange,
-                label = { Text(stringResource(R.string.field_barcode)) },
-                singleLine = true,
-                modifier = Modifier.fillMaxWidth()
-            )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                OutlinedTextField(
+                    value = state.barcode,
+                    onValueChange = viewModel::onBarcodeChange,
+                    label = { Text(stringResource(R.string.field_barcode)) },
+                    singleLine = true,
+                    modifier = Modifier.weight(1f)
+                )
+                androidx.compose.material3.IconButton(
+                    onClick = {
+                        navController.navigate(
+                            com.monstock.app.ui.navigation.Screen.BarcodeScanner.createRoute(
+                                mode = com.monstock.app.ui.screens.scanner.ScannerMode.ADD_ITEM,
+                                shelfId = state.selectedShelfId
+                            )
+                        )
+                    }
+                ) {
+                    androidx.compose.material3.Icon(
+                        androidx.compose.material.icons.Icons.Default.QrCodeScanner,
+                        contentDescription = stringResource(R.string.scanner_title)
+                    )
+                }
+            }
 
             // --- Notes ---
             OutlinedTextField(

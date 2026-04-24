@@ -1,50 +1,54 @@
 [
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.monstock.app-debug-78:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.monstock.app-debug-78:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.monstock.app-debug-78:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.monstock.app-debug-78:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.monstock.app-debug-78:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.monstock.app-debug-78:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.monstock.app-debug-78:/xml_data_extraction_rules.xml.flat",
+        "source": "com.monstock.app-main-80:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.monstock.app-debug-78:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/xml_data_extraction_rules.xml.flat",
-        "source": "com.monstock.app-main-70:/xml/data_extraction_rules.xml"
+        "merged": "com.monstock.app-debug-78:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.monstock.app-debug-78:/xml_backup_rules.xml.flat",
+        "source": "com.monstock.app-main-80:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.monstock.app-debug-68:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.monstock.app-main-70:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.monstock.app-debug-78:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.monstock.app-debug-68:/xml_backup_rules.xml.flat",
-        "source": "com.monstock.app-main-70:/xml/backup_rules.xml"
+        "merged": "com.monstock.app-debug-78:/xml_file_provider_paths.xml.flat",
+        "source": "com.monstock.app-main-80:/xml/file_provider_paths.xml"
+    },
+    {
+        "merged": "com.monstock.app-debug-78:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.monstock.app-main-80:/mipmap-hdpi/ic_launcher.png"
     }
 ]

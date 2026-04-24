@@ -17,7 +17,9 @@ data class Item(
     val minimumStockThreshold: Double? = null,
     val barcode: String? = null,
     val photoUri: String? = null,
-    val notes: String? = null
+    val notes: String? = null,
+    /** Optional purchase price per unit (€), used for spend tracking. */
+    val purchasePricePerUnit: Double? = null
 ) {
     /** True if expiry date is in the past. */
     val isExpired: Boolean

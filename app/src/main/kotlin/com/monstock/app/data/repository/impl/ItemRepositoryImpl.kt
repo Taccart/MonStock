@@ -73,7 +73,8 @@ class ItemRepositoryImpl @Inject constructor(
         minimumStockThreshold = minimumStockThreshold,
         barcode = barcode,
         photoUri = photoUri,
-        notes = notes
+        notes = notes,
+        purchasePricePerUnit = purchasePricePerUnit
     )
 
     private fun Item.toEntity() = ItemEntity(
@@ -89,6 +90,7 @@ class ItemRepositoryImpl @Inject constructor(
         minimumStockThreshold = minimumStockThreshold,
         barcode = barcode,
         photoUri = photoUri,
-        notes = notes
+        notes = notes,
+        purchasePricePerUnit = purchasePricePerUnit
     )
 }

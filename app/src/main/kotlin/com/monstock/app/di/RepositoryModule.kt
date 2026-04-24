@@ -1,10 +1,14 @@
 package com.monstock.app.di
 
 import com.monstock.app.data.repository.BarcodeRepository
+import com.monstock.app.data.repository.ConsumptionRepository
+import com.monstock.app.data.repository.InventoryRepository
 import com.monstock.app.data.repository.ItemRepository
 import com.monstock.app.data.repository.PantryRepository
 import com.monstock.app.data.repository.ShelfRepository
 import com.monstock.app.data.repository.impl.BarcodeRepositoryImpl
+import com.monstock.app.data.repository.impl.ConsumptionRepositoryImpl
+import com.monstock.app.data.repository.impl.InventoryRepositoryImpl
 import com.monstock.app.data.repository.impl.ItemRepositoryImpl
 import com.monstock.app.data.repository.impl.PantryRepositoryImpl
 import com.monstock.app.data.repository.impl.ShelfRepositoryImpl
@@ -33,5 +37,13 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindBarcodeRepository(impl: BarcodeRepositoryImpl): BarcodeRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindConsumptionRepository(impl: ConsumptionRepositoryImpl): ConsumptionRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindInventoryRepository(impl: InventoryRepositoryImpl): InventoryRepository
 }
 

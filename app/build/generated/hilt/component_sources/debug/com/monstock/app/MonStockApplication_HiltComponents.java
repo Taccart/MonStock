@@ -9,6 +9,10 @@ import com.monstock.app.ui.screens.home.HomeViewModel_HiltModules;
 import com.monstock.app.ui.screens.itemdetail.ItemDetailViewModel_HiltModules;
 import com.monstock.app.ui.screens.itemlist.ItemListViewModel_HiltModules;
 import com.monstock.app.ui.screens.pantry.PantryListViewModel_HiltModules;
+import com.monstock.app.ui.screens.scanner.BarcodeConfirmViewModel_HiltModules;
+import com.monstock.app.ui.screens.scanner.BarcodeScannerViewModel_HiltModules;
+import com.monstock.app.ui.screens.scanner.QrLabelViewModel_HiltModules;
+import com.monstock.app.ui.screens.scanner.RestockScanViewModel_HiltModules;
 import com.monstock.app.ui.screens.shelf.ShelfViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -164,6 +168,8 @@ public final class MonStockApplication_HiltComponents {
   @Subcomponent(
       modules = {
           AddEditItemViewModel_HiltModules.KeyModule.class,
+          BarcodeConfirmViewModel_HiltModules.KeyModule.class,
+          BarcodeScannerViewModel_HiltModules.KeyModule.class,
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HiltWrapper_SavedStateHandleModule.class,
           HomeViewModel_HiltModules.KeyModule.class,
@@ -172,6 +178,8 @@ public final class MonStockApplication_HiltComponents {
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class,
           PantryListViewModel_HiltModules.KeyModule.class,
+          QrLabelViewModel_HiltModules.KeyModule.class,
+          RestockScanViewModel_HiltModules.KeyModule.class,
           ShelfViewModel_HiltModules.KeyModule.class
       }
   )
@@ -209,11 +217,15 @@ public final class MonStockApplication_HiltComponents {
   @Subcomponent(
       modules = {
           AddEditItemViewModel_HiltModules.BindsModule.class,
+          BarcodeConfirmViewModel_HiltModules.BindsModule.class,
+          BarcodeScannerViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           HomeViewModel_HiltModules.BindsModule.class,
           ItemDetailViewModel_HiltModules.BindsModule.class,
           ItemListViewModel_HiltModules.BindsModule.class,
           PantryListViewModel_HiltModules.BindsModule.class,
+          QrLabelViewModel_HiltModules.BindsModule.class,
+          RestockScanViewModel_HiltModules.BindsModule.class,
           ShelfViewModel_HiltModules.BindsModule.class
       }
   )

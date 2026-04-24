@@ -1,89 +1,125 @@
 -- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:52:9-60:20
+	android:grantUriPermissions
+		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:56:13-47
+	android:authorities
+		INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml
+		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:54:13-60
+	android:exported
+		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:53:13-62
 manifest
-ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:1-54:12
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/08fecfd1d8ad14cff08de7034089dede/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/ff5dab2735220edaab40d12f082f6d03/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-common:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/c9b891e8ca24cb17d21614f82fc9c592/transformed/navigation-common-2.8.5/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/f1de5135851ff9d41648f4980331d212/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/39a9fcdb12505cf302d283af7c320d78/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/7bd1df4e767abb3cd107dfa150cf5e73/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-compose:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/c75d7f98ebfd1f7802b655353106b2c2/transformed/navigation-compose-2.8.5/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/02a25c9f4c32664fc8350acf3cdc1e01/transformed/material3-release/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.dagger:hilt-android:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/94b78d63c919cf697a014a87961aa336/transformed/hilt-android-2.53.1/AndroidManifest.xml:16:1-19:12
-MERGED from [androidx.fragment:fragment:1.5.1] /home/taccart/.gradle/caches/8.9/transforms/43e370ed1a64a5fc3ae5fa48a7ed03af/transformed/fragment-1.5.1/AndroidManifest.xml:17:1-24:12
-MERGED from [io.coil-kt:coil-compose:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/b28bc66ba70e8ad2d460737bb69d1252/transformed/coil-compose-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/ed2835e542bd352980e9c7ddef583867/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [io.coil-kt:coil:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/fe15cd67fc015bf29bea0ff290b0b3fd/transformed/coil-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [io.coil-kt:coil-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/70cdc7e1e4b7bf0fb0cea21e9ddd00da/transformed/coil-base-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.loader:loader:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/5a3e7cfcaacb531623793996b527931e/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.material:material-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/eaa319a82a038e7945addf9d5e63f2ce/transformed/material-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/c7198dee08a42c213daf7f0fb292d1f2/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/09b0973ba3e006bba1f37d4253a6f48e/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.animation:animation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2dd29219a58fa6520dc5f29a4fb9553c/transformed/animation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/8446f14a16e62fe53b2f6141e9403575/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/bd351aa84edc59d96d6cd97bd36f1c93/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ea07e978b5054637eb12c3c00496a3d5/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ba0d4e7ab1c1f2b3f5ce69bca551c646/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/217b34710e3a0fda4645c0e819095a91/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2c1061c5bfded90e502ea4b3e07f8e7f/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/a482fc0be75eef948c79c03a9376f38f/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ba926076b2df19047e75a8fb0464150d/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/09724ba445ba9e3eb76d73387e644310/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/844c917a2150cfb66f6e72ddf8b5f49e/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/b730c80ba546772058c15213b32eae9f/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/a2111fbf57f76ffe0c45195d42c4126b/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3c289ea8f50f7bfea8572ea41340e482/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:2:1-5:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1ec5ce4b43b5782e2056d83e78087e44/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/0037aa1630bd500c906708c62a88b9b1/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/56ed506c6456e2481f4b40fb292de678/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1066c94dbd092073ba0eff2d6cb41879/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1cf0b86c0ff06621196de6a3ee31fb6f/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/869242cee28c6c2017814cadd28abc13/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/0a8d6d94cc0316021f688099985ca522/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f22118865f430ed6ec0f7b7c3a17c01a/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/ea1ccd4cd005955d009dc6636ec4b711/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/taccart/.gradle/caches/8.9/transforms/1ea74b3484bdb604ed2dc894cf0779c1/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d8939fe24a8d34f0d0553930168e80a6/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dc1bd99998b86d9664e50c636b76fc04/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/15832c181ac549e1f4e238a91cc0e11b/transformed/ui-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.activity:activity-compose:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/1b42456501fce67274a8ca9ec879dee4/transformed/activity-compose-1.9.3/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.activity:activity-ktx:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/f43907814cdd86c6844af021089eaba9/transformed/activity-ktx-1.9.3/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.activity:activity:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/40370fd42e24d7f4d39c446657940ecf/transformed/activity-1.9.3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/3e21121d030a0099f67607e3f59e8f1f/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.autofill:autofill:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/c254d28421a16f63401b65467dbcb24c/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.graphics:graphics-path:1.0.1] /home/taccart/.gradle/caches/8.9/transforms/44e8f98b37de54fe44bebd3070d06cc5/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.customview:customview:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/2c3747ebecb6c96fa5041947e6ad72a3/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/b3ee2d76b3be2918b2074f87af1eef9e/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/3d1325539121b1be91ba3e6d6a74a006/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/6773689c58f28beb6058c7acce91d59d/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/0de4b49902b4b8bc3b9a2311f8e842e1/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.core:core-ktx:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/a4503d700677fc838ad2d56c9f5b8485/transformed/core-ktx-1.15.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:17:1-31:12
-MERGED from [androidx.room:room-ktx:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/a31d847dfbeb44d66a9f179db181a8e5/transformed/room-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.datastore:datastore-core-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/7b8ae9502202a7caf55daec791ab51dc/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.datastore:datastore-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/c7d1d34e0547e59461b8a94c07c968cc/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/b088b3c10ebe66e158bc7288ae62879d/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/38981945e86cdb0e756b8b1ab643a1b3/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6be7196750bf12760c84bc2d40851258/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/ec2532d79005ec6940b767136aedaac5/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/9aa43cf7f6f25bdd6f53406f4b19f766/transformed/sqlite-framework-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/e9b6a6322bb7ec5b0613864c6949da08/transformed/sqlite-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/cea30325ccbbb37bdaa0dd5e2ef6ff53/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/1a0a8eea986615bdb308393d9bd83b0d/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/e26c0c562e5f24f83f0e57c2b3d44c48/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/bbf5017ed5fd7b0bb6e8c274a0ef9719/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/taccart/.gradle/caches/8.9/transforms/5014db0f904aed60ff2f6daad7ddf9ed/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/taccart/.gradle/caches/8.9/transforms/c478b21e550cc55d1c4681ecfab87407/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.dagger:dagger-lint-aar:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/15bbf89577719d515a0dbe7cb00f3f39/transformed/dagger-lint-aar-2.53.1/AndroidManifest.xml:16:1-19:12
+ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:1-64:12
+MERGED from [androidx.camera:camera-video:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/4d49d9ee988e6eeabcc6fa61df9901fc/transformed/camera-video-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-view:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/2534267eeab9b7617cf4c1abcc212fd1/transformed/camera-view-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-lifecycle:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/c49ca4b4454da6b5d883491c8a848a86/transformed/camera-lifecycle-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.mlkit:barcode-scanning:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/93f0de4dee05971eb4b4a531bfb7ce78/transformed/barcode-scanning-17.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/taccart/.gradle/caches/8.9/transforms/7014bc3996e91ed12863d916eb3c83e0/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /home/taccart/.gradle/caches/8.9/transforms/5109f3e861fb9c14f6eb00ad7b2bdf24/transformed/vision-interfaces-16.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/taccart/.gradle/caches/8.9/transforms/d96a52292c743c7690f0c71fefebe359/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/taccart/.gradle/caches/8.9/transforms/a5aa11dc47d0d193c30e6e227fa89d18/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/16a4f64fed38836b9d05be3a234abe35/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/26829f7e1c08f072136ae094ed4deae3/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/e27c5a81732f395dd214d566d7848088/transformed/navigation-common-2.8.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/64494987f41c7db97641931269bb0a81/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/0105ea221d63f3e6911a88870db52344/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/514cadb2ad2a7531c94ffce3750cfead/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/867da1ab74f4141a7e663031f0425d2f/transformed/navigation-compose-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/85cec988dd6d0a31d6e86b7c22750b40/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:hilt-android:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/0cecc8d8af8bc7bcb5ec1604b161b29e/transformed/hilt-android-2.53.1/AndroidManifest.xml:16:1-19:12
+MERGED from [io.coil-kt:coil-compose:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/420268cfe3ad1bef082bd900ebfd29c3/transformed/coil-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/5400732eb7766bffa67a687e6c868a25/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/7b7f365a4a722886e77aea71e8e5a62c/transformed/coil-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/312bc701e25bc662e65ad850da3081ab/transformed/coil-base-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/09eb15862988196bf992c8e34e2718b5/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/ff01d6a7473f77c5a9e0449d0d61a534/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.5.1] /home/taccart/.gradle/caches/8.9/transforms/e0262de2352a1e8d9bedd26dba6b4571/transformed/fragment-1.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/0d909ce19b20ec6b8f1482193a454bf0/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/7a6b0c44282aaff0d29a4a9d4de5b784/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/596c5f89352c9015f9028f0935c9aae5/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/07f688e17e6bc14794604d04c453f228/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/743fd5dfad62ab05f86452a6aa3f9244/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/30eb3cd3a1226668a4bb903feeec391a/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/1c50111adbfab63c2b6089e2a281cde2/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/f71629f363c9f3b6e47bc4c2c964090b/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2350152f6fa8cc39d3bfc845ff028d46/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/10271a39e49dd5ee07fed9d46368e0bf/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2c615027e38a6479b58f7fa1a35c25f0/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/9e2ac5342e3487b57cc5993988f5bcdc/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/83b66d1d6c46ebb590a024f4d3788f11/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/4dacd8436bf538b10340baafcbd4e03f/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/2a5eded22611fa9c0de0df156e1f02c1/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3136ac1ec522e74947a30d5a7456369c/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/834d4b36cc96a9f3877bad07a4f3dd86/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/d170e35e7cc6e477306cec9bafe702ca/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3574c58e1ba55279877ab105e02ecfba/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/7bd82e9fe6ebb76dcb72320960300083/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/c4ee2d1344f0314dcabc78af31382c39/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/0a9e03f706c5c65db1aacf07956e6412/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1d6da047e92531d99ae06507e4735ca5/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/9e88daff445deef6bccad49269386393/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/dd6580e629e9b58b06e29576b08cc5d1/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/7a809549d3fe8d1482e5053ab76caaa3/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/90c63deed00e33cc50414f797802470f/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/d0ed3e7ef910fc61255994559fdb4090/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/taccart/.gradle/caches/8.9/transforms/06a2ed065dd7764675d54cdcc7772c57/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/eac399aaab9d487ff500797f0944bef7/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/cede90024ac45e7c35eeca3461d1a56c/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6f7f0ce45d48c85feaea83109d86cc6f/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dba10eb27aff5760694cda189e900c91/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/03f6ebb26a12e99c980a4d69bbd533b7/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/44dc9d84f84313b2308e840395c69761/transformed/activity-compose-1.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/f9f1caa11dd20e0dcae19ec679531877/transformed/activity-ktx-1.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/7caafe7cdfefb5970abe609af1b52924/transformed/activity-1.9.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/ff137a1de92388cfcee6d8562ae672af/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/de0b82f7582f07bf4bce61b4a3e3f390/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/taccart/.gradle/caches/8.9/transforms/b80c233a7a81fa996a92396783ee637a/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/cd38be7a3411650ca05547a1bde18ee8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/769d1a60ddb1fab04df70cbfaa7b5a89/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/b09da97ca6430280ce4d68fd93ef90bd/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/3c450e44a42614d45d8546cf39188154/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/9409bc6e18734835c5b627c80488f502/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/d24daece51ed4c628e9246409635caf5/transformed/core-ktx-1.15.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/10b88ab0167d66f483b89d9856847952/transformed/room-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/d0f91d0248023c31192b6a9762752ccf/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/dacaf9c921fa4bd2144065265809b9cc/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/d3693d90ba7e2ce2f2bbbc89f3f2be6f/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6895e489e3f3751cff4c1ae0c389e29b/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/cf2a02aa62e62563f593e0ed764a3d2a/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/9146a6a15e4a5f5b5d6be62d8fb773f7/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/cc5a519b70c312d0a5a46d902db91df5/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/809e72f34c31d4e9f35e53979811fe24/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/5672aa9902240fe1859064fd79bbb3e6/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/e74f88c96019f7273b28c9f698e4ffb8/transformed/sqlite-framework-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/f174e2db15f77d7f0ad0d9667c4d0a2f/transformed/sqlite-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/d0a481935cc0c9935472b371c94f79ae/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/badf4fc7d68bb79f14e012351a6bd465/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/taccart/.gradle/caches/8.9/transforms/767fc8f68d8793ffcaa82b47c56037d3/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/taccart/.gradle/caches/8.9/transforms/5050fcd716b32ebedecf7f17c18c22d7/transformed/transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/taccart/.gradle/caches/8.9/transforms/98c893d6cd736d8edad16a10c1b1609d/transformed/firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/taccart/.gradle/caches/8.9/transforms/b59952eca09e9dd37e5bd05a8eacac96/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/taccart/.gradle/caches/8.9/transforms/5465368e14b4d1557389ed8f33724098/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/8c5a25f3dac10121c1bb5ff8fea613ef/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/e8917ab493c3360f2b2e3a705984386a/transformed/dagger-lint-aar-2.53.1/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/taccart/.gradle/caches/8.9/transforms/042efb13fc062524139d9e90bb89a44e/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 	package
 		INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -94,10 +130,16 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.53.1] /home/taccart/.gradle/cac
 		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
 	android:name
 		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.CAMERA
@@ -129,30 +171,52 @@ ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidM
 	android:name
 		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:26:22-63
 application
-ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:28:5-52:19
-INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:28:5-52:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/cea30325ccbbb37bdaa0dd5e2ef6ff53/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/cea30325ccbbb37bdaa0dd5e2ef6ff53/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/e26c0c562e5f24f83f0e57c2b3d44c48/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/e26c0c562e5f24f83f0e57c2b3d44c48/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:28:5-62:19
+INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:28:5-62:19
+MERGED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:23:5-34:19
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/taccart/.gradle/caches/8.9/transforms/d96a52292c743c7690f0c71fefebe359/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/taccart/.gradle/caches/8.9/transforms/d96a52292c743c7690f0c71fefebe359/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/taccart/.gradle/caches/8.9/transforms/a5aa11dc47d0d193c30e6e227fa89d18/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/taccart/.gradle/caches/8.9/transforms/a5aa11dc47d0d193c30e6e227fa89d18/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dba10eb27aff5760694cda189e900c91/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dba10eb27aff5760694cda189e900c91/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/03f6ebb26a12e99c980a4d69bbd533b7/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/03f6ebb26a12e99c980a4d69bbd533b7/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/9146a6a15e4a5f5b5d6be62d8fb773f7/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/9146a6a15e4a5f5b5d6be62d8fb773f7/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/d0a481935cc0c9935472b371c94f79ae/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/d0a481935cc0c9935472b371c94f79ae/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/taccart/.gradle/caches/8.9/transforms/042efb13fc062524139d9e90bb89a44e/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/taccart/.gradle/caches/8.9/transforms/042efb13fc062524139d9e90bb89a44e/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 	android:extractNativeLibs
 		INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
 		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:36:9-35
 	android:label
@@ -195,283 +259,441 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:48:17-77
 	android:name
 		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:48:27-74
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:57:13-59:63
+	android:resource
+		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:59:17-60
+	android:name
+		ADDED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:58:17-67
 uses-sdk
 INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml
 INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/08fecfd1d8ad14cff08de7034089dede/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/08fecfd1d8ad14cff08de7034089dede/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/ff5dab2735220edaab40d12f082f6d03/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/ff5dab2735220edaab40d12f082f6d03/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-common:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/c9b891e8ca24cb17d21614f82fc9c592/transformed/navigation-common-2.8.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/c9b891e8ca24cb17d21614f82fc9c592/transformed/navigation-common-2.8.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/f1de5135851ff9d41648f4980331d212/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/f1de5135851ff9d41648f4980331d212/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/39a9fcdb12505cf302d283af7c320d78/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/39a9fcdb12505cf302d283af7c320d78/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/7bd1df4e767abb3cd107dfa150cf5e73/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/7bd1df4e767abb3cd107dfa150cf5e73/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-compose:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/c75d7f98ebfd1f7802b655353106b2c2/transformed/navigation-compose-2.8.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-compose:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/c75d7f98ebfd1f7802b655353106b2c2/transformed/navigation-compose-2.8.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/02a25c9f4c32664fc8350acf3cdc1e01/transformed/material3-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/02a25c9f4c32664fc8350acf3cdc1e01/transformed/material3-release/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:hilt-android:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/94b78d63c919cf697a014a87961aa336/transformed/hilt-android-2.53.1/AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:hilt-android:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/94b78d63c919cf697a014a87961aa336/transformed/hilt-android-2.53.1/AndroidManifest.xml:18:3-42
-MERGED from [androidx.fragment:fragment:1.5.1] /home/taccart/.gradle/caches/8.9/transforms/43e370ed1a64a5fc3ae5fa48a7ed03af/transformed/fragment-1.5.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.5.1] /home/taccart/.gradle/caches/8.9/transforms/43e370ed1a64a5fc3ae5fa48a7ed03af/transformed/fragment-1.5.1/AndroidManifest.xml:20:5-22:41
-MERGED from [io.coil-kt:coil-compose:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/b28bc66ba70e8ad2d460737bb69d1252/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [io.coil-kt:coil-compose:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/b28bc66ba70e8ad2d460737bb69d1252/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/ed2835e542bd352980e9c7ddef583867/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/ed2835e542bd352980e9c7ddef583867/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [io.coil-kt:coil:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/fe15cd67fc015bf29bea0ff290b0b3fd/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [io.coil-kt:coil:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/fe15cd67fc015bf29bea0ff290b0b3fd/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [io.coil-kt:coil-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/70cdc7e1e4b7bf0fb0cea21e9ddd00da/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [io.coil-kt:coil-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/70cdc7e1e4b7bf0fb0cea21e9ddd00da/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/5a3e7cfcaacb531623793996b527931e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/5a3e7cfcaacb531623793996b527931e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material:material-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/eaa319a82a038e7945addf9d5e63f2ce/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/eaa319a82a038e7945addf9d5e63f2ce/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/c7198dee08a42c213daf7f0fb292d1f2/transformed/animation-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/c7198dee08a42c213daf7f0fb292d1f2/transformed/animation-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/09b0973ba3e006bba1f37d4253a6f48e/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/09b0973ba3e006bba1f37d4253a6f48e/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2dd29219a58fa6520dc5f29a4fb9553c/transformed/animation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2dd29219a58fa6520dc5f29a4fb9553c/transformed/animation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/8446f14a16e62fe53b2f6141e9403575/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/8446f14a16e62fe53b2f6141e9403575/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/bd351aa84edc59d96d6cd97bd36f1c93/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/bd351aa84edc59d96d6cd97bd36f1c93/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ea07e978b5054637eb12c3c00496a3d5/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ea07e978b5054637eb12c3c00496a3d5/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ba0d4e7ab1c1f2b3f5ce69bca551c646/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ba0d4e7ab1c1f2b3f5ce69bca551c646/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/217b34710e3a0fda4645c0e819095a91/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/217b34710e3a0fda4645c0e819095a91/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2c1061c5bfded90e502ea4b3e07f8e7f/transformed/ui-util-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2c1061c5bfded90e502ea4b3e07f8e7f/transformed/ui-util-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/a482fc0be75eef948c79c03a9376f38f/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/a482fc0be75eef948c79c03a9376f38f/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ba926076b2df19047e75a8fb0464150d/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/ba926076b2df19047e75a8fb0464150d/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/09724ba445ba9e3eb76d73387e644310/transformed/ui-text-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/09724ba445ba9e3eb76d73387e644310/transformed/ui-text-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/844c917a2150cfb66f6e72ddf8b5f49e/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/844c917a2150cfb66f6e72ddf8b5f49e/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/b730c80ba546772058c15213b32eae9f/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/b730c80ba546772058c15213b32eae9f/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/a2111fbf57f76ffe0c45195d42c4126b/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/a2111fbf57f76ffe0c45195d42c4126b/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3c289ea8f50f7bfea8572ea41340e482/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:4:5-43
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3c289ea8f50f7bfea8572ea41340e482/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:4:5-43
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1ec5ce4b43b5782e2056d83e78087e44/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1ec5ce4b43b5782e2056d83e78087e44/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/0037aa1630bd500c906708c62a88b9b1/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/0037aa1630bd500c906708c62a88b9b1/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/56ed506c6456e2481f4b40fb292de678/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/56ed506c6456e2481f4b40fb292de678/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1066c94dbd092073ba0eff2d6cb41879/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1066c94dbd092073ba0eff2d6cb41879/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1cf0b86c0ff06621196de6a3ee31fb6f/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1cf0b86c0ff06621196de6a3ee31fb6f/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/869242cee28c6c2017814cadd28abc13/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/869242cee28c6c2017814cadd28abc13/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/0a8d6d94cc0316021f688099985ca522/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/0a8d6d94cc0316021f688099985ca522/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f22118865f430ed6ec0f7b7c3a17c01a/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f22118865f430ed6ec0f7b7c3a17c01a/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/ea1ccd4cd005955d009dc6636ec4b711/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/ea1ccd4cd005955d009dc6636ec4b711/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
-MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/taccart/.gradle/caches/8.9/transforms/1ea74b3484bdb604ed2dc894cf0779c1/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/taccart/.gradle/caches/8.9/transforms/1ea74b3484bdb604ed2dc894cf0779c1/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d8939fe24a8d34f0d0553930168e80a6/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d8939fe24a8d34f0d0553930168e80a6/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dc1bd99998b86d9664e50c636b76fc04/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dc1bd99998b86d9664e50c636b76fc04/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/15832c181ac549e1f4e238a91cc0e11b/transformed/ui-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/15832c181ac549e1f4e238a91cc0e11b/transformed/ui-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity-compose:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/1b42456501fce67274a8ca9ec879dee4/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-compose:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/1b42456501fce67274a8ca9ec879dee4/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-ktx:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/f43907814cdd86c6844af021089eaba9/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-ktx:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/f43907814cdd86c6844af021089eaba9/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/40370fd42e24d7f4d39c446657940ecf/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/40370fd42e24d7f4d39c446657940ecf/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/3e21121d030a0099f67607e3f59e8f1f/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/3e21121d030a0099f67607e3f59e8f1f/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.autofill:autofill:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/c254d28421a16f63401b65467dbcb24c/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.autofill:autofill:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/c254d28421a16f63401b65467dbcb24c/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.graphics:graphics-path:1.0.1] /home/taccart/.gradle/caches/8.9/transforms/44e8f98b37de54fe44bebd3070d06cc5/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.graphics:graphics-path:1.0.1] /home/taccart/.gradle/caches/8.9/transforms/44e8f98b37de54fe44bebd3070d06cc5/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/2c3747ebecb6c96fa5041947e6ad72a3/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/2c3747ebecb6c96fa5041947e6ad72a3/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/b3ee2d76b3be2918b2074f87af1eef9e/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/b3ee2d76b3be2918b2074f87af1eef9e/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/3d1325539121b1be91ba3e6d6a74a006/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/3d1325539121b1be91ba3e6d6a74a006/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/6773689c58f28beb6058c7acce91d59d/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/6773689c58f28beb6058c7acce91d59d/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/0de4b49902b4b8bc3b9a2311f8e842e1/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/0de4b49902b4b8bc3b9a2311f8e842e1/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.core:core-ktx:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/a4503d700677fc838ad2d56c9f5b8485/transformed/core-ktx-1.15.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/a4503d700677fc838ad2d56c9f5b8485/transformed/core-ktx-1.15.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-ktx:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/a31d847dfbeb44d66a9f179db181a8e5/transformed/room-ktx-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.room:room-ktx:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/a31d847dfbeb44d66a9f179db181a8e5/transformed/room-ktx-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-core-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/7b8ae9502202a7caf55daec791ab51dc/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-core-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/7b8ae9502202a7caf55daec791ab51dc/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/c7d1d34e0547e59461b8a94c07c968cc/transformed/datastore-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/c7d1d34e0547e59461b8a94c07c968cc/transformed/datastore-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/b088b3c10ebe66e158bc7288ae62879d/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/b088b3c10ebe66e158bc7288ae62879d/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/38981945e86cdb0e756b8b1ab643a1b3/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/38981945e86cdb0e756b8b1ab643a1b3/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6be7196750bf12760c84bc2d40851258/transformed/runtime-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6be7196750bf12760c84bc2d40851258/transformed/runtime-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/ec2532d79005ec6940b767136aedaac5/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/ec2532d79005ec6940b767136aedaac5/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/9aa43cf7f6f25bdd6f53406f4b19f766/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/9aa43cf7f6f25bdd6f53406f4b19f766/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/e9b6a6322bb7ec5b0613864c6949da08/transformed/sqlite-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/e9b6a6322bb7ec5b0613864c6949da08/transformed/sqlite-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/cea30325ccbbb37bdaa0dd5e2ef6ff53/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/cea30325ccbbb37bdaa0dd5e2ef6ff53/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/1a0a8eea986615bdb308393d9bd83b0d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/1a0a8eea986615bdb308393d9bd83b0d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/e26c0c562e5f24f83f0e57c2b3d44c48/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/e26c0c562e5f24f83f0e57c2b3d44c48/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/bbf5017ed5fd7b0bb6e8c274a0ef9719/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.tracing:tracing:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/bbf5017ed5fd7b0bb6e8c274a0ef9719/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/taccart/.gradle/caches/8.9/transforms/5014db0f904aed60ff2f6daad7ddf9ed/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/taccart/.gradle/caches/8.9/transforms/5014db0f904aed60ff2f6daad7ddf9ed/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/taccart/.gradle/caches/8.9/transforms/c478b21e550cc55d1c4681ecfab87407/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/taccart/.gradle/caches/8.9/transforms/c478b21e550cc55d1c4681ecfab87407/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.dagger:dagger-lint-aar:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/15bbf89577719d515a0dbe7cb00f3f39/transformed/dagger-lint-aar-2.53.1/AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:dagger-lint-aar:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/15bbf89577719d515a0dbe7cb00f3f39/transformed/dagger-lint-aar-2.53.1/AndroidManifest.xml:18:3-42
+MERGED from [androidx.camera:camera-video:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/4d49d9ee988e6eeabcc6fa61df9901fc/transformed/camera-video-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/4d49d9ee988e6eeabcc6fa61df9901fc/transformed/camera-video-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-view:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/2534267eeab9b7617cf4c1abcc212fd1/transformed/camera-view-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/2534267eeab9b7617cf4c1abcc212fd1/transformed/camera-view-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/c49ca4b4454da6b5d883491c8a848a86/transformed/camera-lifecycle-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/c49ca4b4454da6b5d883491c8a848a86/transformed/camera-lifecycle-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.mlkit:barcode-scanning:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/93f0de4dee05971eb4b4a531bfb7ce78/transformed/barcode-scanning-17.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:barcode-scanning:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/93f0de4dee05971eb4b4a531bfb7ce78/transformed/barcode-scanning-17.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/taccart/.gradle/caches/8.9/transforms/7014bc3996e91ed12863d916eb3c83e0/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/taccart/.gradle/caches/8.9/transforms/7014bc3996e91ed12863d916eb3c83e0/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /home/taccart/.gradle/caches/8.9/transforms/5109f3e861fb9c14f6eb00ad7b2bdf24/transformed/vision-interfaces-16.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /home/taccart/.gradle/caches/8.9/transforms/5109f3e861fb9c14f6eb00ad7b2bdf24/transformed/vision-interfaces-16.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/taccart/.gradle/caches/8.9/transforms/d96a52292c743c7690f0c71fefebe359/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/taccart/.gradle/caches/8.9/transforms/d96a52292c743c7690f0c71fefebe359/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/taccart/.gradle/caches/8.9/transforms/a5aa11dc47d0d193c30e6e227fa89d18/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/taccart/.gradle/caches/8.9/transforms/a5aa11dc47d0d193c30e6e227fa89d18/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/16a4f64fed38836b9d05be3a234abe35/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/16a4f64fed38836b9d05be3a234abe35/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/26829f7e1c08f072136ae094ed4deae3/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/26829f7e1c08f072136ae094ed4deae3/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/e27c5a81732f395dd214d566d7848088/transformed/navigation-common-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/e27c5a81732f395dd214d566d7848088/transformed/navigation-common-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/64494987f41c7db97641931269bb0a81/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/64494987f41c7db97641931269bb0a81/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/0105ea221d63f3e6911a88870db52344/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/0105ea221d63f3e6911a88870db52344/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/514cadb2ad2a7531c94ffce3750cfead/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/514cadb2ad2a7531c94ffce3750cfead/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/867da1ab74f4141a7e663031f0425d2f/transformed/navigation-compose-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /home/taccart/.gradle/caches/8.9/transforms/867da1ab74f4141a7e663031f0425d2f/transformed/navigation-compose-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/85cec988dd6d0a31d6e86b7c22750b40/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/85cec988dd6d0a31d6e86b7c22750b40/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:hilt-android:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/0cecc8d8af8bc7bcb5ec1604b161b29e/transformed/hilt-android-2.53.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/0cecc8d8af8bc7bcb5ec1604b161b29e/transformed/hilt-android-2.53.1/AndroidManifest.xml:18:3-42
+MERGED from [io.coil-kt:coil-compose:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/420268cfe3ad1bef082bd900ebfd29c3/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/420268cfe3ad1bef082bd900ebfd29c3/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/5400732eb7766bffa67a687e6c868a25/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/5400732eb7766bffa67a687e6c868a25/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/7b7f365a4a722886e77aea71e8e5a62c/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/7b7f365a4a722886e77aea71e8e5a62c/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/312bc701e25bc662e65ad850da3081ab/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/312bc701e25bc662e65ad850da3081ab/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/09eb15862988196bf992c8e34e2718b5/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/09eb15862988196bf992c8e34e2718b5/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/ff01d6a7473f77c5a9e0449d0d61a534/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/taccart/.gradle/caches/8.9/transforms/ff01d6a7473f77c5a9e0449d0d61a534/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.5.1] /home/taccart/.gradle/caches/8.9/transforms/e0262de2352a1e8d9bedd26dba6b4571/transformed/fragment-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.1] /home/taccart/.gradle/caches/8.9/transforms/e0262de2352a1e8d9bedd26dba6b4571/transformed/fragment-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/0d909ce19b20ec6b8f1482193a454bf0/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/0d909ce19b20ec6b8f1482193a454bf0/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/7a6b0c44282aaff0d29a4a9d4de5b784/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/7a6b0c44282aaff0d29a4a9d4de5b784/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/596c5f89352c9015f9028f0935c9aae5/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/596c5f89352c9015f9028f0935c9aae5/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/07f688e17e6bc14794604d04c453f228/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/07f688e17e6bc14794604d04c453f228/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/743fd5dfad62ab05f86452a6aa3f9244/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/743fd5dfad62ab05f86452a6aa3f9244/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/30eb3cd3a1226668a4bb903feeec391a/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/30eb3cd3a1226668a4bb903feeec391a/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/1c50111adbfab63c2b6089e2a281cde2/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/1c50111adbfab63c2b6089e2a281cde2/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/f71629f363c9f3b6e47bc4c2c964090b/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/f71629f363c9f3b6e47bc4c2c964090b/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2350152f6fa8cc39d3bfc845ff028d46/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2350152f6fa8cc39d3bfc845ff028d46/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/10271a39e49dd5ee07fed9d46368e0bf/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/10271a39e49dd5ee07fed9d46368e0bf/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2c615027e38a6479b58f7fa1a35c25f0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/2c615027e38a6479b58f7fa1a35c25f0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/9e2ac5342e3487b57cc5993988f5bcdc/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/9e2ac5342e3487b57cc5993988f5bcdc/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/83b66d1d6c46ebb590a024f4d3788f11/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/83b66d1d6c46ebb590a024f4d3788f11/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/4dacd8436bf538b10340baafcbd4e03f/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/4dacd8436bf538b10340baafcbd4e03f/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/2a5eded22611fa9c0de0df156e1f02c1/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/2a5eded22611fa9c0de0df156e1f02c1/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3136ac1ec522e74947a30d5a7456369c/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3136ac1ec522e74947a30d5a7456369c/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/834d4b36cc96a9f3877bad07a4f3dd86/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/834d4b36cc96a9f3877bad07a4f3dd86/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/d170e35e7cc6e477306cec9bafe702ca/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/d170e35e7cc6e477306cec9bafe702ca/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3574c58e1ba55279877ab105e02ecfba/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/3574c58e1ba55279877ab105e02ecfba/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/7bd82e9fe6ebb76dcb72320960300083/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/7bd82e9fe6ebb76dcb72320960300083/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/c4ee2d1344f0314dcabc78af31382c39/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/taccart/.gradle/caches/8.9/transforms/c4ee2d1344f0314dcabc78af31382c39/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/0a9e03f706c5c65db1aacf07956e6412/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/0a9e03f706c5c65db1aacf07956e6412/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1d6da047e92531d99ae06507e4735ca5/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/1d6da047e92531d99ae06507e4735ca5/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/9e88daff445deef6bccad49269386393/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/9e88daff445deef6bccad49269386393/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/dd6580e629e9b58b06e29576b08cc5d1/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/dd6580e629e9b58b06e29576b08cc5d1/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/7a809549d3fe8d1482e5053ab76caaa3/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/7a809549d3fe8d1482e5053ab76caaa3/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/90c63deed00e33cc50414f797802470f/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/90c63deed00e33cc50414f797802470f/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/d0ed3e7ef910fc61255994559fdb4090/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/d0ed3e7ef910fc61255994559fdb4090/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/taccart/.gradle/caches/8.9/transforms/06a2ed065dd7764675d54cdcc7772c57/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/taccart/.gradle/caches/8.9/transforms/06a2ed065dd7764675d54cdcc7772c57/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/eac399aaab9d487ff500797f0944bef7/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/eac399aaab9d487ff500797f0944bef7/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/cede90024ac45e7c35eeca3461d1a56c/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/cede90024ac45e7c35eeca3461d1a56c/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6f7f0ce45d48c85feaea83109d86cc6f/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6f7f0ce45d48c85feaea83109d86cc6f/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dba10eb27aff5760694cda189e900c91/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dba10eb27aff5760694cda189e900c91/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/03f6ebb26a12e99c980a4d69bbd533b7/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/03f6ebb26a12e99c980a4d69bbd533b7/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/44dc9d84f84313b2308e840395c69761/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/44dc9d84f84313b2308e840395c69761/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/f9f1caa11dd20e0dcae19ec679531877/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/f9f1caa11dd20e0dcae19ec679531877/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/7caafe7cdfefb5970abe609af1b52924/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.3] /home/taccart/.gradle/caches/8.9/transforms/7caafe7cdfefb5970abe609af1b52924/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/ff137a1de92388cfcee6d8562ae672af/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/ff137a1de92388cfcee6d8562ae672af/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/de0b82f7582f07bf4bce61b4a3e3f390/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/de0b82f7582f07bf4bce61b4a3e3f390/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/taccart/.gradle/caches/8.9/transforms/b80c233a7a81fa996a92396783ee637a/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/taccart/.gradle/caches/8.9/transforms/b80c233a7a81fa996a92396783ee637a/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/cd38be7a3411650ca05547a1bde18ee8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/cd38be7a3411650ca05547a1bde18ee8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/769d1a60ddb1fab04df70cbfaa7b5a89/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/769d1a60ddb1fab04df70cbfaa7b5a89/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/b09da97ca6430280ce4d68fd93ef90bd/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/b09da97ca6430280ce4d68fd93ef90bd/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/3c450e44a42614d45d8546cf39188154/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/taccart/.gradle/caches/8.9/transforms/3c450e44a42614d45d8546cf39188154/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/9409bc6e18734835c5b627c80488f502/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/9409bc6e18734835c5b627c80488f502/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/d24daece51ed4c628e9246409635caf5/transformed/core-ktx-1.15.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/d24daece51ed4c628e9246409635caf5/transformed/core-ktx-1.15.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/10b88ab0167d66f483b89d9856847952/transformed/room-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/10b88ab0167d66f483b89d9856847952/transformed/room-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/d0f91d0248023c31192b6a9762752ccf/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/d0f91d0248023c31192b6a9762752ccf/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/dacaf9c921fa4bd2144065265809b9cc/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/dacaf9c921fa4bd2144065265809b9cc/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/d3693d90ba7e2ce2f2bbbc89f3f2be6f/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.2] /home/taccart/.gradle/caches/8.9/transforms/d3693d90ba7e2ce2f2bbbc89f3f2be6f/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6895e489e3f3751cff4c1ae0c389e29b/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/6895e489e3f3751cff4c1ae0c389e29b/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/cf2a02aa62e62563f593e0ed764a3d2a/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/cf2a02aa62e62563f593e0ed764a3d2a/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/9146a6a15e4a5f5b5d6be62d8fb773f7/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/9146a6a15e4a5f5b5d6be62d8fb773f7/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/cc5a519b70c312d0a5a46d902db91df5/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/cc5a519b70c312d0a5a46d902db91df5/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/809e72f34c31d4e9f35e53979811fe24/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/taccart/.gradle/caches/8.9/transforms/809e72f34c31d4e9f35e53979811fe24/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/5672aa9902240fe1859064fd79bbb3e6/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/5672aa9902240fe1859064fd79bbb3e6/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/e74f88c96019f7273b28c9f698e4ffb8/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/e74f88c96019f7273b28c9f698e4ffb8/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/f174e2db15f77d7f0ad0d9667c4d0a2f/transformed/sqlite-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/taccart/.gradle/caches/8.9/transforms/f174e2db15f77d7f0ad0d9667c4d0a2f/transformed/sqlite-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/d0a481935cc0c9935472b371c94f79ae/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/d0a481935cc0c9935472b371c94f79ae/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/badf4fc7d68bb79f14e012351a6bd465/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/badf4fc7d68bb79f14e012351a6bd465/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/taccart/.gradle/caches/8.9/transforms/767fc8f68d8793ffcaa82b47c56037d3/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/taccart/.gradle/caches/8.9/transforms/767fc8f68d8793ffcaa82b47c56037d3/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/taccart/.gradle/caches/8.9/transforms/5050fcd716b32ebedecf7f17c18c22d7/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/taccart/.gradle/caches/8.9/transforms/5050fcd716b32ebedecf7f17c18c22d7/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/taccart/.gradle/caches/8.9/transforms/98c893d6cd736d8edad16a10c1b1609d/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/taccart/.gradle/caches/8.9/transforms/98c893d6cd736d8edad16a10c1b1609d/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/taccart/.gradle/caches/8.9/transforms/b59952eca09e9dd37e5bd05a8eacac96/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/taccart/.gradle/caches/8.9/transforms/b59952eca09e9dd37e5bd05a8eacac96/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/taccart/.gradle/caches/8.9/transforms/5465368e14b4d1557389ed8f33724098/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/taccart/.gradle/caches/8.9/transforms/5465368e14b4d1557389ed8f33724098/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/8c5a25f3dac10121c1bb5ff8fea613ef/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/taccart/.gradle/caches/8.9/transforms/8c5a25f3dac10121c1bb5ff8fea613ef/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-lint-aar:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/e8917ab493c3360f2b2e3a705984386a/transformed/dagger-lint-aar-2.53.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.53.1] /home/taccart/.gradle/caches/8.9/transforms/e8917ab493c3360f2b2e3a705984386a/transformed/dagger-lint-aar-2.53.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/taccart/.gradle/caches/8.9/transforms/042efb13fc062524139d9e90bb89a44e/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/taccart/.gradle/caches/8.9/transforms/042efb13fc062524139d9e90bb89a44e/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
 		INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml
-provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/e26c0c562e5f24f83f0e57c2b3d44c48/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/e26c0c562e5f24f83f0e57c2b3d44c48/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
-	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
-activity#androidx.activity.ComponentActivity
-ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:23:9-25:39
-	android:exported
-		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:25:13-36
-	android:name
-		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:24:13-63
-activity#androidx.compose.ui.tooling.PreviewActivity
-ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
-	android:exported
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
-	android:name
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
-	android:protectionLevel
-		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
-	android:name
-		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
-permission#com.monstock.app.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
-	android:protectionLevel
-		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
-	android:name
-		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
-uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
-	android:name
-		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
-uses-permission#com.monstock.app.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
-	android:name
-		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
-service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:24:9-28:63
-	android:exported
-		ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:27:13-37
-	tools:ignore
-		ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:28:13-60
-	android:directBootAware
-		ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:26:13-43
-	android:name
-		ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:25:13-74
-meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:29:9-33:78
+MERGED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:24:9-33:19
+MERGED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:24:9-33:19
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+		ADDED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:31:13-36
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:32:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:33:13-75
+	android:name
+		ADDED from [androidx.camera:camera-core:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/fc1f11817ef5d9bdf2e49d3360bf575a/transformed/camera-core-1.4.1/AndroidManifest.xml:30:13-75
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:30:13-32:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:32:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.4.1] /home/taccart/.gradle/caches/8.9/transforms/7aceda841967505d10d6369426ea5aad/transformed/camera-camera2-1.4.1/AndroidManifest.xml:31:17-103
+service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:15:9-23:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:11:13-37
+	tools:targetApi
+		ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:19:13-32
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+		ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:17:13-43
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:10:13-91
+meta-data#com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
+ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /home/taccart/.gradle/caches/8.9/transforms/4b8abb8b6e1ec17d172cdd8ba97c65a5/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:13:17-120
+meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
+ADDED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.mlkit:vision-common:17.3.0] /home/taccart/.gradle/caches/8.9/transforms/3d203de71eaf4bc63084d7884f242d7c/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+provider#com.google.mlkit.common.internal.MlKitInitProvider
+ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:9:9-13:38
+	android:authorities
+		ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:11:13-69
+	android:exported
+		ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:13:13-35
+	android:name
+		ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:10:13-78
+meta-data#com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
+ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.mlkit:common:18.11.0] /home/taccart/.gradle/caches/8.9/transforms/e0da7b2467568c76a6623d27b0be51a4/transformed/common-18.11.0/AndroidManifest.xml:21:17-120
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/taccart/.gradle/caches/8.9/transforms/22620d67836a1e32b1fb33100ea5fed3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/taccart/.gradle/caches/8.9/transforms/a5aa11dc47d0d193c30e6e227fa89d18/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/taccart/.gradle/caches/8.9/transforms/a5aa11dc47d0d193c30e6e227fa89d18/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/taccart/.gradle/caches/8.9/transforms/a5aa11dc47d0d193c30e6e227fa89d18/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/9146a6a15e4a5f5b5d6be62d8fb773f7/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/taccart/.gradle/caches/8.9/transforms/9146a6a15e4a5f5b5d6be62d8fb773f7/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/d90e84318ba890c749aecc1033a68420/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f91e9ada6a8b3bbadf2885d2cac54e81/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dba10eb27aff5760694cda189e900c91/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dba10eb27aff5760694cda189e900c91/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/dba10eb27aff5760694cda189e900c91/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:24:13-63
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/03f6ebb26a12e99c980a4d69bbd533b7/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/03f6ebb26a12e99c980a4d69bbd533b7/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/03f6ebb26a12e99c980a4d69bbd533b7/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+permission#com.monstock.app.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+uses-permission#com.monstock.app.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/acfbcd1772a61f4cdb0615cc8d8f3e28/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/48ed3c53f7bbd853071de0367ef1d6cf/transformed/room-runtime-release/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/a1dda6d8721a42ffe348d27fc637e56e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/taccart/.gradle/caches/8.9/transforms/60a886ab1f32be76ff4d34b050b67b08/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/taccart/.gradle/caches/8.9/transforms/a0e9b481d7072a074063736ec3e1ad7b/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132

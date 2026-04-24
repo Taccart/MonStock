@@ -3,6 +3,9 @@ package com.monstock.app.di
 import android.content.Context
 import androidx.room.Room
 import com.monstock.app.data.local.dao.BarcodeCacheDao
+import com.monstock.app.data.local.dao.ConsumptionEventDao
+import com.monstock.app.data.local.dao.InventoryEntryDao
+import com.monstock.app.data.local.dao.InventorySessionDao
 import com.monstock.app.data.local.dao.ItemDao
 import com.monstock.app.data.local.dao.PantryDao
 import com.monstock.app.data.local.dao.ShelfDao
@@ -45,5 +48,17 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun provideBarcodeCacheDao(db: MonStockDatabase): BarcodeCacheDao = db.barcodeCacheDao()
+
+    @Provides
+    @Singleton
+    fun provideConsumptionEventDao(db: MonStockDatabase): ConsumptionEventDao = db.consumptionEventDao()
+
+    @Provides
+    @Singleton
+    fun provideInventorySessionDao(db: MonStockDatabase): InventorySessionDao = db.inventorySessionDao()
+
+    @Provides
+    @Singleton
+    fun provideInventoryEntryDao(db: MonStockDatabase): InventoryEntryDao = db.inventoryEntryDao()
 }
 

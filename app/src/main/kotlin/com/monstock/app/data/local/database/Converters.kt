@@ -1,9 +1,12 @@
 package com.monstock.app.data.local.database
 
 import androidx.room.TypeConverter
+import com.monstock.app.data.model.ConsumptionEventType
+import com.monstock.app.data.model.InventorySessionStatus
 import com.monstock.app.data.model.ItemCategory
 import com.monstock.app.data.model.ItemUnit
 import java.time.LocalDate
+import java.time.LocalDateTime
 
 class Converters {
 
@@ -33,4 +36,32 @@ class Converters {
 
     @TypeConverter
     fun itemUnitToString(unit: ItemUnit?): String? = unit?.name
+
+    // --- ConsumptionEventType ---
+
+    @TypeConverter
+    fun fromConsumptionEventType(value: String?): ConsumptionEventType? =
+        value?.let { enumValueOf<ConsumptionEventType>(it) }
+
+    @TypeConverter
+    fun consumptionEventTypeToString(type: ConsumptionEventType?): String? = type?.name
+
+    // --- LocalDateTime ---
+
+    @TypeConverter
+    fun fromLocalDateTime(value: Long?): LocalDateTime? =
+        value?.let { LocalDateTime.ofEpochSecond(it, 0, java.time.ZoneOffset.UTC) }
+
+    @TypeConverter
+    fun localDateTimeToEpochSecond(dateTime: LocalDateTime?): Long? =
+        dateTime?.toEpochSecond(java.time.ZoneOffset.UTC)
+
+    // --- InventorySessionStatus ---
+
+    @TypeConverter
+    fun fromInventorySessionStatus(value: String?): InventorySessionStatus? =
+        value?.let { enumValueOf<InventorySessionStatus>(it) }
+
+    @TypeConverter
+    fun inventorySessionStatusToString(status: InventorySessionStatus?): String? = status?.name
 }

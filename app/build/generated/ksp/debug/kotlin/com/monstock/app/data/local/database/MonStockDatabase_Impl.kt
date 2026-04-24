@@ -9,6 +9,8 @@ import androidx.room.util.TableInfo.Companion.read
 import androidx.room.util.dropFtsSyncTriggers
 import androidx.sqlite.SQLiteConnection
 import androidx.sqlite.execSQL
+import com.monstock.app.`data`.local.dao.BarcodeCacheDao
+import com.monstock.app.`data`.local.dao.BarcodeCacheDao_Impl
 import com.monstock.app.`data`.local.dao.ItemDao
 import com.monstock.app.`data`.local.dao.ItemDao_Impl
 import com.monstock.app.`data`.local.dao.PantryDao
@@ -45,23 +47,29 @@ public class MonStockDatabase_Impl : MonStockDatabase() {
     ItemDao_Impl(this)
   }
 
+  private val _barcodeCacheDao: Lazy<BarcodeCacheDao> = lazy {
+    BarcodeCacheDao_Impl(this)
+  }
+
   protected override fun createOpenDelegate(): RoomOpenDelegate {
-    val _openDelegate: RoomOpenDelegate = object : RoomOpenDelegate(2,
-        "dc2807cedf2642f094a6c7b8f5508a2b", "c7fbe25dc980b8b63a9c579456ce6ee3") {
+    val _openDelegate: RoomOpenDelegate = object : RoomOpenDelegate(3,
+        "1f1c94df0c6d04b5c913ec01f0693db3", "2e090e404911195a1a2c1be08a3ef94e") {
       public override fun createAllTables(connection: SQLiteConnection) {
         connection.execSQL("CREATE TABLE IF NOT EXISTS `pantries` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL)")
         connection.execSQL("CREATE TABLE IF NOT EXISTS `shelves` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `pantryId` INTEGER NOT NULL, `name` TEXT NOT NULL, `capacity` INTEGER, FOREIGN KEY(`pantryId`) REFERENCES `pantries`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )")
         connection.execSQL("CREATE INDEX IF NOT EXISTS `index_shelves_pantryId` ON `shelves` (`pantryId`)")
         connection.execSQL("CREATE TABLE IF NOT EXISTS `items` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `shelfId` INTEGER NOT NULL, `name` TEXT NOT NULL, `brand` TEXT, `category` TEXT NOT NULL, `quantity` REAL NOT NULL, `unit` TEXT NOT NULL, `purchaseDate` INTEGER, `expiryDate` INTEGER, `minimumStockThreshold` REAL, `barcode` TEXT, `photoUri` TEXT, `notes` TEXT, FOREIGN KEY(`shelfId`) REFERENCES `shelves`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )")
         connection.execSQL("CREATE INDEX IF NOT EXISTS `index_items_shelfId` ON `items` (`shelfId`)")
+        connection.execSQL("CREATE TABLE IF NOT EXISTS `barcode_cache` (`barcode` TEXT NOT NULL, `name` TEXT NOT NULL, `brand` TEXT, `category` TEXT, `unit` TEXT, `imageUrl` TEXT, `cachedAt` INTEGER NOT NULL, PRIMARY KEY(`barcode`))")
         connection.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)")
-        connection.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'dc2807cedf2642f094a6c7b8f5508a2b')")
+        connection.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1f1c94df0c6d04b5c913ec01f0693db3')")
       }
 
       public override fun dropAllTables(connection: SQLiteConnection) {
         connection.execSQL("DROP TABLE IF EXISTS `pantries`")
         connection.execSQL("DROP TABLE IF EXISTS `shelves`")
         connection.execSQL("DROP TABLE IF EXISTS `items`")
+        connection.execSQL("DROP TABLE IF EXISTS `barcode_cache`")
       }
 
       public override fun onCreate(connection: SQLiteConnection) {
@@ -172,6 +180,35 @@ public class MonStockDatabase_Impl : MonStockDatabase() {
               | Found:
               |""".trimMargin() + _existingItems)
         }
+        val _columnsBarcodeCache: MutableMap<String, TableInfo.Column> = mutableMapOf()
+        _columnsBarcodeCache.put("barcode", TableInfo.Column("barcode", "TEXT", true, 1, null,
+            TableInfo.CREATED_FROM_ENTITY))
+        _columnsBarcodeCache.put("name", TableInfo.Column("name", "TEXT", true, 0, null,
+            TableInfo.CREATED_FROM_ENTITY))
+        _columnsBarcodeCache.put("brand", TableInfo.Column("brand", "TEXT", false, 0, null,
+            TableInfo.CREATED_FROM_ENTITY))
+        _columnsBarcodeCache.put("category", TableInfo.Column("category", "TEXT", false, 0, null,
+            TableInfo.CREATED_FROM_ENTITY))
+        _columnsBarcodeCache.put("unit", TableInfo.Column("unit", "TEXT", false, 0, null,
+            TableInfo.CREATED_FROM_ENTITY))
+        _columnsBarcodeCache.put("imageUrl", TableInfo.Column("imageUrl", "TEXT", false, 0, null,
+            TableInfo.CREATED_FROM_ENTITY))
+        _columnsBarcodeCache.put("cachedAt", TableInfo.Column("cachedAt", "INTEGER", true, 0, null,
+            TableInfo.CREATED_FROM_ENTITY))
+        val _foreignKeysBarcodeCache: MutableSet<TableInfo.ForeignKey> = mutableSetOf()
+        val _indicesBarcodeCache: MutableSet<TableInfo.Index> = mutableSetOf()
+        val _infoBarcodeCache: TableInfo = TableInfo("barcode_cache", _columnsBarcodeCache,
+            _foreignKeysBarcodeCache, _indicesBarcodeCache)
+        val _existingBarcodeCache: TableInfo = read(connection, "barcode_cache")
+        if (!_infoBarcodeCache.equals(_existingBarcodeCache)) {
+          return RoomOpenDelegate.ValidationResult(false, """
+              |barcode_cache(com.monstock.app.data.local.entity.BarcodeCacheEntity).
+              | Expected:
+              |""".trimMargin() + _infoBarcodeCache + """
+              |
+              | Found:
+              |""".trimMargin() + _existingBarcodeCache)
+        }
         return RoomOpenDelegate.ValidationResult(true, null)
       }
     }
@@ -181,11 +218,12 @@ public class MonStockDatabase_Impl : MonStockDatabase() {
   protected override fun createInvalidationTracker(): InvalidationTracker {
     val _shadowTablesMap: MutableMap<String, String> = mutableMapOf()
     val _viewTables: MutableMap<String, Set<String>> = mutableMapOf()
-    return InvalidationTracker(this, _shadowTablesMap, _viewTables, "pantries", "shelves", "items")
+    return InvalidationTracker(this, _shadowTablesMap, _viewTables, "pantries", "shelves", "items",
+        "barcode_cache")
   }
 
   public override fun clearAllTables() {
-    super.performClear(true, "pantries", "shelves", "items")
+    super.performClear(true, "pantries", "shelves", "items", "barcode_cache")
   }
 
   protected override fun getRequiredTypeConverterClasses(): Map<KClass<*>, List<KClass<*>>> {
@@ -193,6 +231,7 @@ public class MonStockDatabase_Impl : MonStockDatabase() {
     _typeConvertersMap.put(PantryDao::class, PantryDao_Impl.getRequiredConverters())
     _typeConvertersMap.put(ShelfDao::class, ShelfDao_Impl.getRequiredConverters())
     _typeConvertersMap.put(ItemDao::class, ItemDao_Impl.getRequiredConverters())
+    _typeConvertersMap.put(BarcodeCacheDao::class, BarcodeCacheDao_Impl.getRequiredConverters())
     return _typeConvertersMap
   }
 
@@ -213,4 +252,6 @@ public class MonStockDatabase_Impl : MonStockDatabase() {
   public override fun shelfDao(): ShelfDao = _shelfDao.value
 
   public override fun itemDao(): ItemDao = _itemDao.value
+
+  public override fun barcodeCacheDao(): BarcodeCacheDao = _barcodeCacheDao.value
 }

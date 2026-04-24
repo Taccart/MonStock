@@ -13,6 +13,9 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Kitchen
+import androidx.compose.material.icons.filled.QrCodeScanner
+import androidx.compose.material.icons.filled.BarChart
+import androidx.compose.material.icons.filled.Inventory
 import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExtendedFloatingActionButton
@@ -145,6 +148,45 @@ fun HomeScreen(
                     text = { Text(stringResource(R.string.home_add_item)) },
                     modifier = Modifier.weight(1f),
                     containerColor = MaterialTheme.colorScheme.tertiaryContainer
+                )
+            }
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                ExtendedFloatingActionButton(
+                    onClick = {
+                        navController.navigate(
+                            com.monstock.app.ui.navigation.Screen.BarcodeScanner.createRoute(
+                                mode = com.monstock.app.ui.screens.scanner.ScannerMode.ADD_ITEM
+                            )
+                        )
+                    },
+                    icon = { Icon(Icons.Default.QrCodeScanner, contentDescription = null) },
+                    text = { Text(stringResource(R.string.scanner_title)) },
+                    modifier = Modifier.weight(1f),
+                    containerColor = MaterialTheme.colorScheme.primaryContainer
+                )
+                ExtendedFloatingActionButton(
+                    onClick = { navController.navigate(com.monstock.app.ui.navigation.Screen.Statistics.route) },
+                    icon = { Icon(Icons.Default.BarChart, contentDescription = null) },
+                    text = { Text(stringResource(R.string.nav_statistics)) },
+                    modifier = Modifier.weight(1f),
+                    containerColor = MaterialTheme.colorScheme.tertiaryContainer
+                )
+            }
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                ExtendedFloatingActionButton(
+                    onClick = { navController.navigate(com.monstock.app.ui.navigation.Screen.Inventory.route) },
+                    icon = { Icon(Icons.Default.Inventory, contentDescription = null) },
+                    text = { Text("Inventaire") },
+                    modifier = Modifier.weight(1f),
+                    containerColor = MaterialTheme.colorScheme.secondaryContainer
                 )
             }
         }
