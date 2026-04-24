@@ -2,6 +2,7 @@ package com.monstock.app.di
 
 import android.content.Context
 import androidx.room.Room
+import com.monstock.app.data.local.dao.BarcodeCacheDao
 import com.monstock.app.data.local.dao.ItemDao
 import com.monstock.app.data.local.dao.PantryDao
 import com.monstock.app.data.local.dao.ShelfDao
@@ -40,4 +41,9 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun provideItemDao(db: MonStockDatabase): ItemDao = db.itemDao()
+
+    @Provides
+    @Singleton
+    fun provideBarcodeCacheDao(db: MonStockDatabase): BarcodeCacheDao = db.barcodeCacheDao()
 }
+
