@@ -1,0 +1,9 @@
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.pantry.PantryListViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.pantry.PantryListViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.addedit.AddEditItemViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.addedit.AddEditItemViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.itemlist.ItemListViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.itemlist.ItemListViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.itemdetail.ItemDetailViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.itemdetail.ItemDetailViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.home.HomeViewModel

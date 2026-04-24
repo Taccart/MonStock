@@ -1,0 +1,4 @@
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.pantry.PantryListViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.pantry.PantryListViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.addedit.AddEditItemViewModel
+-keep,allowobfuscation,allowshrinking class com.monstock.app.ui.screens.addedit.AddEditItemViewModel

@@ -1,0 +1,203 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.monstock.app.debug"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="36" />
+10
+11    <!-- Network permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:5:5-67
+12-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:6:5-79
+13-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:6:22-76
+14
+15    <!-- Camera permission (for barcode scanning) -->
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:9:5-65
+16-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:9:22-62
+17
+18    <!-- Storage permissions (Android < 13) -->
+19    <uses-permission
+19-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:12:5-14:38
+20        android:name="android.permission.READ_EXTERNAL_STORAGE"
+20-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:13:9-64
+21        android:maxSdkVersion="32" />
+21-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:14:9-35
+22    <uses-permission
+22-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:15:5-17:38
+23        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+23-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:16:9-65
+24        android:maxSdkVersion="29" />
+24-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:17:9-35
+25
+26    <!-- Media permissions (Android 13+) -->
+27    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+27-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:20:5-76
+27-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:20:22-73
+28
+29    <!-- Notifications (Android 13+) -->
+30    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+30-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:23:5-77
+30-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:23:22-74
+31
+32    <!-- Vibration -->
+33    <uses-permission android:name="android.permission.VIBRATE" />
+33-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:26:5-66
+33-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:26:22-63
+34
+35    <permission
+35-->[androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+36        android:name="com.monstock.app.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+36-->[androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+37        android:protectionLevel="signature" />
+37-->[androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+38
+39    <uses-permission android:name="com.monstock.app.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+39-->[androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+40
+41    <application
+41-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:28:5-52:19
+42        android:name="com.monstock.app.MonStockApplication"
+42-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:29:9-44
+43        android:allowBackup="true"
+43-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:30:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.15.0] /home/taccart/.gradle/caches/8.9/transforms/17634672e5bb88f7a728cd8296e46d1e/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+45        android:dataExtractionRules="@xml/data_extraction_rules"
+45-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:31:9-65
+46        android:debuggable="true"
+47        android:enableOnBackInvokedCallback="true"
+47-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:38:9-51
+48        android:extractNativeLibs="false"
+49        android:fullBackupContent="@xml/backup_rules"
+49-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:32:9-54
+50        android:icon="@mipmap/ic_launcher"
+50-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:33:9-43
+51        android:label="@string/app_name"
+51-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:34:9-41
+52        android:roundIcon="@mipmap/ic_launcher_round"
+52-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:35:9-54
+53        android:supportsRtl="true"
+53-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:36:9-35
+54        android:theme="@style/Theme.MonStock" >
+54-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:37:9-46
+55        <activity
+55-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:40:9-50:20
+56            android:name="com.monstock.app.ui.MainActivity"
+56-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:41:13-44
+57            android:exported="true"
+57-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:42:13-36
+58            android:label="@string/app_name"
+58-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:43:13-45
+59            android:theme="@style/Theme.MonStock"
+59-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:44:13-50
+60            android:windowSoftInputMode="adjustResize" >
+60-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:45:13-55
+61            <intent-filter>
+61-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:46:13-49:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:47:17-69
+62-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:47:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:48:17-77
+64-->/home/taccart/development/github_perso/MonStock/app/src/main/AndroidManifest.xml:48:27-74
+65            </intent-filter>
+66        </activity>
+67
+68        <provider
+68-->[androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+69            android:name="androidx.startup.InitializationProvider"
+69-->[androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+70            android:authorities="com.monstock.app.debug.androidx-startup"
+70-->[androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+71            android:exported="false" >
+71-->[androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+72            <meta-data
+72-->[androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+73-->[androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+74                android:value="androidx.startup" />
+74-->[androidx.emoji2:emoji2:1.3.0] /home/taccart/.gradle/caches/8.9/transforms/c56b1022a0ea877a5fd2978b2b56ea6b/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+75            <meta-data
+75-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+76-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+77                android:value="androidx.startup" />
+77-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/taccart/.gradle/caches/8.9/transforms/f60068944735d8afe680b2f894cbf000/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+78            <meta-data
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+80                android:value="androidx.startup" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+81        </provider>
+82
+83        <activity
+83-->[androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:23:9-25:39
+84            android:name="androidx.activity.ComponentActivity"
+84-->[androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:24:13-63
+85            android:exported="true" />
+85-->[androidx.compose.ui:ui-test-manifest:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/acafd456ac4816827d35b7f8f9832805/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:25:13-36
+86        <activity
+86-->[androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+87            android:name="androidx.compose.ui.tooling.PreviewActivity"
+87-->[androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+88            android:exported="true" />
+88-->[androidx.compose.ui:ui-tooling-android:1.7.6] /home/taccart/.gradle/caches/8.9/transforms/d89ddfc3ebe15e3ce55ff9b0b8b8d84b/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+89
+90        <service
+90-->[androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:24:9-28:63
+91            android:name="androidx.room.MultiInstanceInvalidationService"
+91-->[androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:25:13-74
+92            android:directBootAware="true"
+92-->[androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:26:13-43
+93            android:exported="false" />
+93-->[androidx.room:room-runtime-android:2.7.0] /home/taccart/.gradle/caches/8.9/transforms/da9ba413e9ef30896966055b9c81de73/transformed/room-runtime-release/AndroidManifest.xml:27:13-37
+94
+95        <receiver
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+96            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+97            android:directBootAware="false"
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+98            android:enabled="true"
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+99            android:exported="true"
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+100            android:permission="android.permission.DUMP" >
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+102                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+105                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+108                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+109            </intent-filter>
+110            <intent-filter>
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+111                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/taccart/.gradle/caches/8.9/transforms/eb4b3932cbbecbe38eeddc5294914817/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+112            </intent-filter>
+113        </receiver>
+114    </application>
+115
+116</manifest>

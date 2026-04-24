@@ -1,0 +1,29 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Kotlin
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Room schemas (optional - uncomment if you don't want to track them)
+# /app/schemas
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google services
+google-services.json
